@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Body</title>
+    <script src="https://kit.fontawesome.com/5c0ab3779c.js" crossorigin="anonymous"></script>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        body{
+            background-color: #f1ecec;
+        }
+        *{
+            box-sizing: border-box;
+            outline:  0 !important;
+            font-weight: normal;
+        }
+        section{
+            max-width: 1000px;
+            /* max-width: 500px; */
+            margin: auto;
+            padding: 10px;
+        }
+        .container-heading{
+            width: 1000px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container-heading > div {
+            display: flex;
+            
+        }
+        .container-heading  a{
+            text-decoration: none;  
+            color: #133b5a;
+            cursor: pointer;
+            background-color: transparent;
+            font-size: 22px;
+            font-family: "Fira Sans",sans-serif ;
+            padding-right:  5px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .container-heading:last-child{
+            padding-left: 0;
+            border-left: none;
+            margin-left: 0;
+        }
+        hr{
+            height: 2px;
+        }
+        section .hr1{
+            width: 770px;
+            margin-top: -3px;
+            background-color: #133b5a;
+            border: none;
+        }
+        section .hr2{
+            width: 750px;
+            margin-top: -3px;
+            background-color: #133b5a;
+            border: none;
+        }
+        .main{
+            /* background-color: crimson; */
+            /* width: 850px; */
+            padding-right: 10px;
+            padding-left: auto;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: start;  */
+            /* gap: 2px; */
+            
+        }
+        .main > div{
+            /* gap: 2px; */
+            width: auto;
+            /* justify-content: space-between;  */
+        }
+        .main .editorials{
+            background-color: #133b5a;
+            color: white;
+            font-family: "Fira Sans",sans-serif ;
+            margin-left: 10px;
+            margin-bottom: -5px;
+            width: auto;
+           
+        }
+        .main .editorials ul{
+            background-color: #133B5A;
+            padding: 7px 12px;
+            margin: 0px 0px 20px;
+            list-style-type: none;
+            margin-bottom: -10px;
+        }
+        .main .editorials ul h1{
+            
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .85px;
+        }
+        .main .editorials ul p{
+            font-size: 16px;
+            margin-top: -2px;
+            font-family: "TundraWeb",serif;
+        }
+        /* .main img{
+            vertical-align: middle
+            width: 110%;
+        } */
+        .main-img{
+            vertical-align: middle;
+            position: relative;
+            min-height: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 33.33333333%;
+        }
+        aside{
+            width: 30%;
+            float: right;
+        }
+        aside .row{
+            background-color: #133b5a;
+            z-index: 1;
+            color: white;
+            margin-top: -105px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+            border-bottom-left-radius: 30px;
+        }
+        aside h4{
+            
+            padding: 5px 15px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            font-size: 17px;
+            font-family: "Fira Sans",sans-serif;
+            font-weight: 600;
+            display: inline-flex;
+        }
+        aside .trending-list{
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            border: crimson;
+            width: 200px;
+            height: 2000px;
+            text-align: left;
+
+        }
+        aside .trending-list .trending-item{
+            display: grid ;
+        }
+        .grid-container{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            /* border: 2px solid red;  */
+            grid-gap: 20px;
+            width: 610px;
+            margin-right: 20px;
+            
+        }
+        .grid-container > .col-1{
+            /* border: 2px solid blue; */
+            width: 110%;
+            height: 117px;
+            background-color: white;
+            margin-right: 20px;
+            
+        }
+        .grid-container ul{
+            margin-top: -100px;
+            margin-right: 10px;
+            margin-left: 85px;
+        }
+        .grid-container a{
+            text-decoration: none;
+        }
+        .grid-container .section-name a{
+            font-size: 12px;
+            letter-spacing: .85px;
+            margin-bottom: 4px;
+            font-family: "Fira Sans", sans-serif;
+            color: #133b5a;
+            font-weight: 600;
+        }
+        .grid-container .section-detail a{
+            font-size: 16px;
+            color: #282828;
+            font-family: "TundraWeb",serif;
+            margin-top: -2px;
+        }
+        .grid-container .section-owner a{
+            color: #828282;
+            font-family: "Fira Sans",sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1px;
+            line-height: 15px;
+            margin: 0 0 5px;            
+        }
+        .grid-container > .col-2{
+            /* border: 2px solid blue; */
+            width: 110%;
+            height: 117px;
+            background-color: white;
+            
+        }
+        .grid-container > .col-3{
+            /* border: 2px solid blue; */
+            width: 110%;
+            height: 117px;
+            background-color: white; 
+        }
+
+        .grid-container > .col-3 h4{
+            width: 100%;
+            float: left;
+            position: relative;
+            height: 47px;
+        }
+        .top-picks-container{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 10px;
+            /* border: 2px solid red;  */
+            background-color: #f1ecec;
+        }
+        .top-picks-container > div{
+                /* border: 1px solid blue;  */
+                width: 23%;
+                /* flex: 1 1 auto; */
+                background-color: white;
+                margin-right: 20px;
+                
+        }
+        .top-picks-container img{
+            /* width: 100%; */
+            justify-content:space-between;
+            height: 135.6px;
+        }
+        .top-picks-container  p{
+            margin-left: 10px;
+            margin-bottom: -10px;
+            font-size: 14px;
+            font-family: "TundraWeb", sans-serif;
+            color: #282828;
+        }
+        .top-picks-container  h5{
+            margin-left: 10px;
+            color: #828282;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+        .top-picks-container  h6{
+            color: #828282;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 1px;
+            float: right;
+            margin-right: 10px;
+            margin-top: -20px;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div class="container-heading top">
+            <div id="container-opinion"> <a href="#"> Top Picks </a> </div>
+        </div>
+        <hr class="hr2">
+        <div class =" top-picks-container">
+            <div>
+                <img
+                    src="https://th-i.thgim.com/public/incoming/gvb5t5/article65721083.ece/alternates/LANDSCAPE_320/vbk-nehru-rahul%20twitter.jpg" alt="img1"/>
+                <p> Congress, its leader change <br> social media display pics to <br> Nehru holding, tricolour</p>
+                <h5> PTI </h6>
+                <h6> 4hrs</h6>
+            </div>
+            <div>
+                <img
+                    src="https://th-i.thgim.com/public/incoming/4x7dle/article65720516.ece/alternates/LANDSCAPE_320/Ayman%20al-Zawahri" alt="img2"/>
+                <p> Zawahiri read alone on <br> balcony, a pattern-of-life <br> intelligence CIA used to kill </p>
+                <h5> PTI </h6>
+            </div>
+            <div>
+                <img
+                    src="https://th-i.thgim.com/public/todays-paper/tp-business/9t5z77/article65660158.ece/alternates/LANDSCAPE_320/Review-spectrum%2BG0KA24K3R.3.jpg" alt="img1"/>
+                <p> Inside the 5G spectrum <br> auction is in focus podcat <br> See more news of this</p>
+                <h5>K. BHARAT KUMAR </h6>
+            </div>
+            <div>
+                <img src="https://th-i.thgim.com/public/podcast/xhwozf/article65651979.ece/alternates/LANDSCAPE_320/PW%20Image.png" alt="IMG4">
+                <p>Monsoon Session Day 12: <br> Discussion on inflation, Wild <br> Life Protection (Amendment)</p>
+                <h5>THE HINDU BUREAU</h5>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-heading">
+            <div id="container-opinion"> <a href="#"> Opinion </a> </div>
+            <div id="container-see"> <a href="#"> See All </a> </div>
+        </div>
+        <hr class="hr1">
+        <div class="main" >
+            <div class="main-img" width="1000px">
+                <img src="https://www.thehindu.com/theme/images/th-online/editorLogo.png" alt="editorials" >
+            </div>
+            <div class="editorials">
+                <ul>
+                    <li><h1> EDITORIAL</h1></li>
+                    <li> <p>Death of a face: on the <br> elimination of al-Qaeda <br> leader Ayman al-Zawahiri</p></li>
+                </ul>
+            </div>
+            <div class="editorials">
+                <ul>
+                    <li><h1>EDITORIAL</h1></li>
+                    <li> <p>Language as barrier: On <br> making mother tongue the <br> medium for higher studies</p></li>
+                </ul>
+            </div>
+        </div>
+        <aside>
+            <div class="trending-main">
+                <div class="row">
+                    <div background-color=" #133b5a">
+                        <h4> Trending on The Hindu </h4>
+                    </div>
+                </div>
+                <div class="trending-list">
+                    <div class="trending-item">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </aside>
+        <div class="main-container">
+            <div class="grid-container">
+                
+                <div class="col-1">
+                    <!-- <div class="premium"> <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="premium"></div> -->
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" alt="leadimg" width="115px" height="115px">
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li class="section-name"><a href="#">LEAD</a> </li>
+                            <li class="section-detail"><a href="#">Making sense of the <br/> 'freebies' issue</a></li>
+                            <li class="section-owner"> <a href="#"> DIPA SINHA </a> </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-2">
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" alt="leadimg" width="115px" height="115px">
+                    </div>
+                    
+                    <div>
+                        <ul>
+                            <li class="section-name"><a href="#">LEAD</a> </li>
+                            <li class="section-detail"><a href="#">Making sense of the <br/> 'freebies' issue</a></li>
+                            <li class="section-owner"> <a href="#"> DIPA SINHA </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="cartoon">
+                        <h1>CARTOON</h1>
+                        <div>
+                            <span><i class="fa-solid fa-comment"></i>32</span>
+                        </div>
+
+                    </div>           
+                </div>
+                <div class="col-4">
+                    <!-- <div class="premium"> <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="premium"></div> -->
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" alt="leadimg" width="115px" height="115px">
+                </div>
+                    
+                <div>
+                    <ul>
+                        <li class="section-name"><a href="#">LEAD</a> </li>
+                        <li class="section-detail"><a href="#">Making sense of the <br/> 'freebies' issue</a></li>
+                        <li class="section-owner"> <a href="#"> DIPA SINHA </a> </li>
+                    </ul>
+                </div>        
+            </div>
+            </div>
+
+        </div>
+        
+    </section>
+    
+</body>
+</html>
