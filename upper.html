@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper</title>
+</head>
+<style>
+    body {
+        background-color: #F5F5F5;
+    }
+
+    .containup {
+        display: grid;
+        /* border-top: 2px solid red; */
+    }
+
+    .containeup>.upper {
+        height: 300px;
+    }
+
+    .upper {
+        display: grid;
+        /* gap:10px; */
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 60%;
+        grid-row-gap: 10px;
+
+    }
+
+    .upper>div {
+        /* border: 1px solid blue; */
+        width: 95%;
+        margin: auto;
+
+        /* height: 50%; */
+    }
+
+    .right {
+        height: 490px;
+        margin-top: 15px;
+    }
+
+    .left{
+       height: 490px;
+    }
+    .left>div:last-child {
+        display: flex;
+        margin: auto;
+    }
+
+    .upper>.left>div>img {
+        width: 100px;
+        height: 108px;
+    }
+
+    .upper>.left>.big>img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .upper>.right>div {
+        margin-top: 15px;
+        /* border: 1px solid yellow; */
+        /* text-align: right; */
+    }
+
+    .right>div:first-child {
+        margin-top: 0px;
+    }
+
+    .right>div:last-child {
+        margin-top: 20px;
+    }
+
+    .upper>.right>div>img {
+        width: 100px;
+        height: 108px;
+    }
+
+    .right {
+        height: 490px;
+    }
+
+    .right>div {
+        display: flex;
+        margin-top: -10px;
+        /* height: */
+    }
+
+    .big {
+        /* margin-top:0px; */
+        color: white;
+        background-color: #133B5A;
+        font-family: "TundraWeb", serif;
+        margin-bottom: 15px;
+
+    }
+
+    .small {
+        margin-left: 10px;
+        font-family: "TundraWeb", serif;
+    }
+
+    .big>h3 {
+        font-family: "TundraWeb", serif;
+    }
+
+    .big>h4 {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        color: white;
+    }
+
+    .small>h4 {
+        color: #133B5A;
+        margin-top: -0.5px;
+        margin-bottom: -10px;
+    }
+    #ss{
+        width:60%;
+    }
+</style>
+
+<body>
+    <div class="containup">
+        <div class="upper">
+            <div class="left">
+                <div class="big">
+                    <img src="https://th-i.thgim.com/public/news/international/up3ncf/article65718367.ece/alternates/FREE_1200/Taiwan_Asia_Pelosi_18808.jpg-7ec1b.jpg"
+                        alt="newspic">
+                    <h3>U.S. House Speaker Nancy Pelosi lands in Taiwan, China warns of countermeasures</h3>
+                    <h4>ANANTH KRISHNAN</h4>
+                    <p>U.S. House Speaker Nancy Pelosi has arrived in Taiwan despite threats from Beijing of serious
+                        consequences, becoming the highest-ranking</p>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/vbisbc/article65717284.ece/alternates/FREE_1200/17_Interfaith_Conference_30_07_Delhi.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <p>Modi govt. renews push to reach out to Muslim community</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="https://th-i.thgim.com/public/news/national/brwbrp/article65427716.ece/alternates/FREE_1200/iStock-494713884%20%282%29.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>ECONOMY</h4>
+                        <p>Centre cuts jet fuel and diesel taxes, hikes petroleum crude export tax</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/l5267/article65718349.ece/alternates/FREE_1200/AFP_32FU7CC.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <p>Central officials assessing impact of Zawahiri’s killing on al-Qaeda’s presence in India</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/hzikv6/article65718317.ece/alternates/FREE_1200/PTI08_02_2022_000119B.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <p>Parliament proceedings | No one is denying price rise, constant efforts on to control it:
+                            Nirmala
+                            Sitharaman</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/x45rfo/article65718463.ece/alternates/FREE_1200/PTI08_02_2022_000338A.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <p>Today, world looks at India and Tricolour with respect: Amit Shah </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="Screenshot.png" alt="pic" id="ss">
+    </div>
+</body>
+
+</html>
