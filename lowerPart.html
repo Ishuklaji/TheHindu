@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lower.css">
     <title>Lower Body</title>
     <script src="https://kit.fontawesome.com/5c0ab3779c.js" crossorigin="anonymous"></script>
-    <style>
+    <!-- <style>
         ul{
             list-style-type: none;
         }
         body{
             background-color: #f1ecec;
+        }
+        a{
+            text-decoration: none;
         }
         *{
             box-sizing: border-box;
@@ -69,21 +73,22 @@
             background-color: #133b5a;
             border: none;
         }
+        section .hr3{
+            width: 730px;
+            margin-top: -3px;
+            background-color: #133b5a;
+            border: none;
+            
+        }
         .main{
-            /* background-color: crimson; */
-            /* width: 850px; */
             padding-right: 10px;
             padding-left: auto;
             display: flex;
             flex-direction: row;
-            /* justify-content: start;  */
-            /* gap: 2px; */
-            
+            margin-bottom: 40px;
         }
         .main > div{
-            /* gap: 2px; */
             width: auto;
-            /* justify-content: space-between;  */
         }
         .main .editorials{
             background-color: #133b5a;
@@ -112,10 +117,6 @@
             margin-top: -2px;
             font-family: "TundraWeb",serif;
         }
-        /* .main img{
-            vertical-align: middle
-            width: 110%;
-        } */
         .main-img{
             vertical-align: middle;
             position: relative;
@@ -238,6 +239,7 @@
             margin-right: 10px;
             /* border: 2px solid red;  */
             background-color: #f1ecec;
+            margin-bottom: 70px;
         }
         .top-picks-container > div{
                 /* border: 1px solid blue;  */
@@ -275,15 +277,28 @@
             letter-spacing: 1px;
             float: right;
             margin-right: 10px;
-            margin-top: -10px;
+            margin-top: -20px;
             margin-bottom: 5px;
         }
-    </style>
+        .container-explained a{
+            text-decoration: none;  
+            color: #133b5a;
+            cursor: pointer;
+            background-color: transparent;
+            font-size: 22px;
+            font-family: "Fira Sans",sans-serif ;
+            padding-right:  5px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+            
+    </style> -->
 
 </head>
 <body>
+    <!-- Top Pickes Section -->
     <section>
-        <div class="container-heading top">
+        <div class="container-heading">
             <div id="container-opinion"> <a href="#"> Top Picks </a> </div>
         </div>
         <hr class="hr2">
@@ -293,7 +308,7 @@
                     src="https://th-i.thgim.com/public/incoming/gvb5t5/article65721083.ece/alternates/LANDSCAPE_320/vbk-nehru-rahul%20twitter.jpg" alt="img1"/>
                 <p> Congress, its leader change <br> social media display pics to <br> Nehru holding, tricolour</p>
                 <h5> PTI </h6>
-                <h6> 4hrs</h6>
+                <h6> 55mins</h6>
             </div>
             <div>
                 <img
@@ -317,104 +332,292 @@
             </div>
         </div>
     </section>
+
+    <!-- Opinion section -->
     <section>
         <div class="container-heading">
             <div id="container-opinion"> <a href="#"> Opinion </a> </div>
             <div id="container-see"> <a href="#"> See All </a> </div>
         </div>
         <hr class="hr1">
-        <div class="main" >
-            <div class="main-img" width="1000px">
-                <img src="https://www.thehindu.com/theme/images/th-online/editorLogo.png" alt="editorials" >
-            </div>
-            <div class="editorials">
-                <ul>
-                    <li><h1> EDITORIAL</h1></li>
-                    <li> <p>Death of a face: on the <br> elimination of al-Qaeda <br> leader Ayman al-Zawahiri</p></li>
-                </ul>
-            </div>
-            <div class="editorials">
-                <ul>
-                    <li><h1>EDITORIAL</h1></li>
-                    <li> <p>Language as barrier: On <br> making mother tongue the <br> medium for higher studies</p></li>
-                </ul>
-            </div>
-        </div>
-        <aside>
-            <div class="trending-main">
-                <div class="row">
-                    <div background-color=" #133b5a">
-                        <h4> Trending on The Hindu </h4>
+        <!-- Editorials -->
+        <div class="opinion-container">
+            <div class="leftEditorial">
+                <div class="main" >
+                    <div class="main-img">
+                        <img src="https://www.thehindu.com/theme/images/th-online/editorLogo.png" alt="editorials" >
                     </div>
-                </div>
-                <div class="trending-list">
-                    <div class="trending-item">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </aside>
-        <div class="main-container">
-            <div class="grid-container">
-                
-                <div class="col-1">
-                    <!-- <div class="premium"> <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="premium"></div> -->
-                    <div>
-                        <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" alt="leadimg" width="115px" height="115px">
-                    </div>
-                    
-                    <div>
+                    <div class="editorials">
                         <ul>
-                            <li class="section-name"><a href="#">LEAD</a> </li>
-                            <li class="section-detail"><a href="#">Making sense of the <br/> 'freebies' issue</a></li>
-                            <li class="section-owner"> <a href="#"> DIPA SINHA </a> </li>
+                            <li><h1> EDITORIAL</h1></li>
+                            <li class="abc"><p>Death of a face: on the elimination of al-Qaeda leader Ayman al-Zawahiri</p></li>
                         </ul>
                     </div>
-                    
-                </div>
-                <div class="col-2">
-                    <div>
-                        <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" alt="leadimg" width="115px" height="115px">
-                    </div>
-                    
-                    <div>
+                    <div class="editorials">
                         <ul>
-                            <li class="section-name"><a href="#">LEAD</a> </li>
-                            <li class="section-detail"><a href="#">Making sense of the <br/> 'freebies' issue</a></li>
-                            <li class="section-owner"> <a href="#"> DIPA SINHA </a> </li>
+                            <li><h1>EDITORIAL</h1></li>
+                            <li> <p>Language as barrier: On <br> making mother tongue</p></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="cartoon">
-                        <h1>CARTOON</h1>
+                <div class="main-container">
+                    <div class="main-conatiner-content">
+                        <!-- premium img -->
+                        <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
                         <div>
-                            <span><i class="fa-solid fa-comment"></i>32</span>
+                            <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" >
                         </div>
-
-                    </div>           
+                        <div class="article-inside">
+                            <div>Lead</div>
+                            <div>Making sense of the 'freebies' issue</div>
+                            <div>DIPA SINHA</div>
+                        </div>
+                    </div>
+                    <div class="main-conatiner-content">
+                        <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/2n1qg/article65722627.ece/alternates/SQUARE_115/NDBL-4-8-9-12.jpg" >
+                        </div>
+                        <div class="article-inside">
+                            <div>comment</div>
+                            <div>Public assests sale and the concern of 'fiduciary duty'</div>
+                            <div>PUHAZH GANDHI P.</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <!-- <div class="premium"> <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="premium"></div> -->
-                <div>
-                    <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" alt="leadimg" width="115px" height="115px">
+                <div class="cartoon">
+                    <div class="cartoon-header">
+                        <div>cartoon</div>
+                        <div class="inside-cartoon">
+                            <div><i class="fa-solid fa-comment"></i> 32 </div>
+                            <div>VIEW ALL</div>
+                        </div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/latest-news/rcert2/article65668263.ece/alternates/LANDSCAPE_560/Tribal-President.JPG" alt="">
+                        </div> 
+                        
+                    </div>
+                    <div >
+                        <div class="main-conatiner-content">
+                            <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                            <div>
+                                <img src="https://th-i.thgim.com/public/incoming/rxqui5/article65722566.ece/alternates/SQUARE_115/PTI07_11_2022_000067A.jpg" >
+                            </div>
+                            <div class="article-inside">
+                                <div>comment</div>
+                                <div>Reaping the demographic dividend</div>
+                                <div>UDAY BALAKRISHNAN</div>
+                            </div>
+                        </div>
+                        <div class="main-conatiner-content">
+                            <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                            <div>
+                                <img src="https://th-i.thgim.com/public/news/national/913v3w/article65723247.ece/alternates/SQUARE_115/Indian%20ocean.jpeg" >
+                            </div>
+                            <div class="article-inside">
+                                <div>comment</div>
+                                <div>Bring back the dhow route</div>
+                                <div>MOHAMMAD NASHEED</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    
+            </div>
+            <div class="trendingList">
+                <div><p>Trending on The Hindu</p></div>
                 <div>
-                    <ul>
-                        <li class="section-name"><a href="#">LEAD</a> </li>
-                        <li class="section-detail"><a href="#">Making sense of the <br/> 'freebies' issue</a></li>
-                        <li class="section-owner"> <a href="#"> DIPA SINHA </a> </li>
-                    </ul>
-                </div>        
-            </div>
-            </div>
+                    <div><i class="fa-solid fa-caret-up"></i></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media <br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+                
+        </div>
+        
+        
+    </section>
 
+    <!-- Explained section -->
+    <section>
+        <div class="container-explained">
+            <div id="container-opinion"> <a href="#"> Explained </a> </div>
+        </div>
+        <hr class="hr3">
+        <div class="explained">
+            <!-- Explained Left -->
+            <div class="explained-left">
+                <div>
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/8b9g30/article65727685.ece/alternates/LANDSCAPE_320/IMG-20220430-WA0003.jpg" alt="">
+                    </div>
+                    <div>Explained | The coal mining protests in the Hasdeo Aranya region</div>
+                    <div>SHUBHOMOY SIKDAR</div>
+                    <div>Why has a private member resolution against coal mining in the Hasdeo forests been passed by the Chhattisgarh Legislative Assembly?</div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/9bfezs/article65726113.ece/alternates/LANDSCAPE_100/2022-08-04T000432Z_756401568_RC2NOV98QDEI_RTRMADP_3_USA-ELECTION-ABORTION.JPG" alt="">
+                        </div>
+                        <div> Explained | Will the Kansas win on abortion have a bearing on other U.S. states? </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/cwyplk/article65723237.ece/alternates/LANDSCAPE_100/2022-08-01T231106Z_2002231278_RC2LHZ5TVB28_RTRMADP_3_AFGHANISTAN-CONFLICT-USA-ZAWAHIRI.JPG" alt="">
+                        </div>
+                        <div> Explained | Who was al-Qaeda chief Ayman al-Zawahiri? </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/i9ncup/article65723184.ece/alternates/LANDSCAPE_100/PTI10_28_2021_000101B.jpg" alt="">
+                        </div>
+                        <div> Explained | Understanding the provisions for foreign visits of State government Ministers </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/17w5dt/article65720228.ece/alternates/LANDSCAPE_100/IMG_TH_-_LSE_KIIFB_Edit__2_1_GG979SOU.jpg" alt="">
+                        </div>
+                        <div> Explained | Kerala’s mounting public debt</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Explained Right -->
+            <div class="explained-right">
+                <div>
+                    <div>Explained | Has bail under PMLA become near-impossible? </div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+                <div> <p> How has the Supreme Court changed its view on Section 45 (1) of the Prevention of Money Laundering Act, 2002?</p></div>
+                <div> <p>G.S. BAJPAIANKIT KAUSHIK</p> </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/iupwu3/article65718496.ece/alternates/LANDSCAPE_300/IMG_prison_bars_2_1_CHA1QEA8.jpg" alt="">
+                </div>
+            </div>
         </div>
         
     </section>
-    
+
+    <!-- SPORT Section -->
+
+    <section>
+        <div class="container-sport">
+            <div id="container-opinion"> <a href="#" color="green"> Sport </a> </div>
+        </div>
+        <hr class="hr3">
+        <div class="explained">
+            <!-- sport Left -->
+            <div class="explained-left">
+                <div>
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/taro3h/article65726027.ece/alternates/LANDSCAPE_320/AP08_03_2022_000002B.jpg" alt="">
+                    </div>
+                    <div>Commonwealth Games 2022 | P.V. Sindhu sails into women's singles pre-quarters</div>
+                    <div>PTI</div>
+                    <div>Sindhu outfoxed her opponent with her all-round game to book a place in the pre-quarterfinals</div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/sport/other-sports/2henk0/article65700177.ece/alternates/LANDSCAPE_100/1411574228.jpg" alt="">
+                        </div>
+                        <div> Commonwealth Games 2022 | Indians in action on August 4, 2022</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/uwxnjv/article65725380.ece/alternates/LANDSCAPE_100/1412742593.jpg" alt="">
+                        </div>
+                        <div> IOC to take a decision in 2023 on cricket’s inclusion in 2028 Los Angeles Olympic Games</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/qq3i2b/article65725190.ece/alternates/LANDSCAPE_100/australia%20children%20cricket" alt="">
+                        </div>
+                        <div> Australian cricket fears ‘missing generation’ after COVID-19</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/news/national/i8fys/article65725634.ece/alternates/LANDSCAPE_100/i.jpeg" alt="">
+                        </div>
+                        <div> Chelsea’s Koulibaly tells Napoli owner to show respect over AFCON comments</div>
+                    </div>
+                </div>
+            </div>
+            <!-- sport Right -->
+            <div class="sport-right">
+                <div>
+                    <div>Tejaswin Shankar wins bronze in men's high jump</div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+                <div> <p> The 23-year-old Shankar was added in the squad last-minute on the orders of Delhi High Court</p></div>
+                <div> <p>PTI</p> </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/ni5682/article65723903.ece/alternates/LANDSCAPE_300/AP08_04_2022_000031B.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- BUSINESS section -->
+    <section>
+        <div class="container-explained">
+            <div id="container-opinion"> <a href="#"> Business </a> </div>
+        </div>
+        <hr class="hr3">
+        <div class="explained">
+            <!-- business Left -->
+            <div class="explained-left">
+                <div>
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/ixr67h/article65727763.ece/alternates/LANDSCAPE_320/PTI8_4_2022_00101000004B.jpg" alt="">
+                    </div>
+                    <div>EMarkets halt 6-day rally; end marginally lower</div>
+                    <div>PTI</div>
+                    <div>The broader NSE Nifty dipped 6.15 points or 0.04% to finish at 17,382.</div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/oyg88f/article65726095.ece/alternates/LANDSCAPE_100/IMG_ISBS---PTI8142018000_2_1_Q0A24HN6.jpg" alt="">
+                        </div>
+                        <div> Rupee falls 17 paise to close at 79.32 against U.S. dollar</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/iagx1n/article65726143.ece/alternates/LANDSCAPE_100/CB26_miniature_chess_pieces_1.jpg" alt="">
+                        </div>
+                        <div> Gold rises ₹487; silver gains ₹426</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/6xebvh/article65725071.ece/alternates/LANDSCAPE_100/2022-08-02T233346Z_916703305_RC2OOV9NLXIR_RTRMADP_3_TWITTER-M-A-SUBPOENAS.JPG" alt="">
+                        </div>
+                        <div> Elon Musk’s response to Twitter lawsuit to be made public by Friday</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/nswv0r/article65725012.ece/alternates/LANDSCAPE_100/2022-08-01T093042Z_475040910_RC2ZQS9IMU0X_RTRMADP_3_USA-CHINA-CHIPS.JPG" alt="">
+                        </div>
+                        <div> Chip makers have a message for car makers: Your turn to pay</div>
+                    </div>
+                </div>
+            </div>
+            <!-- business Right -->
+            <div class="explained-right">
+                <div>
+                    <div>Services sector growth slipped to four-month low in July: S&P Global PMI</div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+                <div> <p> Business sentiment worsens with just 5% firms expecting growth a year from now</p></div>
+                <div> <p>THE HINDU BUREAU</p> </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/449xao/article65720109.ece/alternates/LANDSCAPE_300/thvli%20S%26P%20India%20Services%20Sector%20PMI%20Service%20Economy.jfif" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
 </body>
 </html>
