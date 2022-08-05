@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SignUp</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <style>
+    img{
+            margin-left: 460px;
+            width: 40%;
+    }
+    h2{
+        margin-top: -20px;
+    }
+    h2, p {
+    text-align: center;
+    } 
+    #pBox{
+    text-align: start;
+    justify-items: center;
+    width: 30%; 
+    margin: auto; 
+    padding: 3% 5%; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    } 
+    #btn {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    background-color: blue;
+    width: 102%;  
+    }   
+    input, label, h2{
+    padding-block: 5px;
+    display: block;
+    margin-bottom: 5px;
+    }
+    input{
+    margin-bottom: 10px;
+    width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <br>
+    <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="the hindu img" />
+    <br><br>
+    <div id="pBox">
+        <form>
+        <h2>Sign Up</h2>
+        <label >Full name</label>
+        <input type="text" id="name" placeholder="Enter your full name"/>
+        <br>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email"/>
+        <br>
+        <label>Password</label>
+        <input type="text" id="pswrd" placeholder="Enter password"/>
+        <button id="btn">SIGN UP</button>
+        <p>Already have an account?<a href="signin.html">Log In</a></p>
+        </form>
+    </div>
+    <h1 id="display"></h1>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", details);
+    var signUp = JSON.parse(localStorage.getItem("memberDetails")) || [];
+    function details() {
+
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var mail = document.getElementById("email").value;
+        var pass = document.getElementById("pswrd").value;
+        var signUpObj = {
+            Name: name,
+            Email: mail,
+            Password: pass
+        }
+        signUp.push(signUpObj);
+        localStorage.setItem("memberDetails", JSON.stringify(signUp));
+        alert("Sign Successfully!");
+    }
+</script>
