@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+
+    <style>
+        #page{
+            background-color: #eaeaea;
+            width:100%;
+        }
+        #firstbox{
+            display: flex;
+            border-bottom: 1px solid black;
+            align-items: center;
+            
+        }
+
+        #logobox{
+            display:grid;
+            grid-template-columns: repeat(8, 1fr);
+            width:35%;
+        }
+
+        img{
+            width:100%;
+        }
+
+        #searchbar{
+            width:20%;
+        }
+
+        #inputtag{
+            width:100%;
+            border:0px;
+            background-color: #eaeaea;
+            font-size:20px;
+        }
+
+        #inputtag:focus{
+            
+            outline:none;
+        }
+
+        #whitebox{
+            background-color: white;
+            display:flex;
+        }
+
+        #trendingtodaylist{
+            list-style-type: none;
+            width:80%;
+        }
+
+        #trendingtodaybox{
+            
+            width:40%;
+            border-right:1px dotted black
+        }
+
+        .listitem{
+            text-overflow: ellipsis; 
+            overflow:hidden; 
+            white-space: nowrap;
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+
+        #trendingtopicbox{
+            width:20%;
+            border-right:1px dotted black;
+        }
+
+        .test{
+            content: 
+        }
+
+        #bottomcapitallist{
+            display:flex;
+            list-style-type: none;
+            padding-bottom:20px;
+            padding-top:20px;
+        }
+
+
+        .underlinedtagsofcapital{
+            text-decoration: none;
+            margin-right: 20px;
+            color:rgb(137, 130, 130);
+            font-weight: 900;
+        }
+
+        .underlinedtagsofcapital:hover{
+            text-decoration: underline;
+            
+        }
+
+        .hoveredtagsofcapital{
+            text-decoration: none;
+            margin-right: 20px;
+            color:rgb(137, 130, 130);
+            font-weight: 900;
+        }
+
+        .hoveredtagsofcapital:hover{
+            color:rgb(78, 75, 75);
+        }
+
+        #firstoffivebarslist{
+            list-style-type: none;
+            display:flex;
+            justify-content: center;
+        }
+
+        .firstoffivebarslistitems{
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color: #828282;
+            border-right: 1px solid #a9a6a6;
+        }
+
+        .firstoffivebarslistitems:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="page">
+        <div id="firstbox">
+            <div id="logobox">
+                <span style="height:50px;"><svg style="height:50px; align-items:center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></span>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+                <img src="https://files.softicons.com/download/social-media-icons/simple-icons-by-dan-leech/png/256x256/facebook.png"/>
+    
+            </div>
+    
+            <div id="thehindulogo">
+                <img src="https://www.thehindu.com/theme/images/th-online/logo.png"/>
+            </div>
+    
+            <div id="searchbar">
+                <input id="inputtag"  placeholder="Search here"/>
+            </div>
+    
+        </div>
+
+        <div id="whitebox">
+            
+            <div style="margin-bottom: 20px; margin-top:20px; display:flex; justify-content: space-around;">
+                <div id="trendingtodaybox">
+                    <ul id="trendingtodaylist">
+                        <li class="listitem" style="font-weight: 600;">TRENDING TODAY </li>
+                        <li class="listitem">Central officials assessing impact of Zawahiri’s killing on al-Qaeda’s presence in India  </li>
+                        <li class="listitem">CJI Ramana names Justice U.U. Lalit as successor</li>
+                        <li class="listitem">U.S.-China ties on a precipice after Pelosi visit to Taiwan </li>
+                        <li class="listitem">Chinese military begins ‘strategic’ drills around Taiwan: state media</li>
+                        <li class="listitem">No merger with India but Nagas cannot live apart: NSCN (I-M)</li>
+                        <li class="test"></li>
+                    </ul>
+                </div>
+    
+                <div id="trendingtopicbox">
+                    <ul id="trendingtopiclist">
+                        <li class="listitem" style="font-weight: 600;">TRENDING TOPIC</li>
+                        <li class="listitem">Judge </li>
+                        <li class="listitem">USA</li>
+                        <li class="listitem">China </li>
+                        <li class="listitem">Nagaland</li>
+                    </ul>
+                </div>
+    
+                <div id="trendingonourgroupsitesbox">
+                    <ul id="trendingonourgroupsiteslist">
+                        <li class="listitem" style="font-weight: 600;">TRENDING ON OUR GROUP SITES</li>
+                        <li class="listitem">BUSINESSLINE </li>
+                        <li class="listitem">Digital Payments</li>
+                        <li class="listitem">Foreign Exchange</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+
+            <nav>
+                <div>
+                    <ul id="bottomcapitallist">
+                        <li ><a class="underlinedtagsofcapital"href="https://www.thehindu.com/"> HOME</a></li>
+                        <li><a  class="hoveredtagsofcapital"href="https://www.thehindu.com/news/">NEWS</a></li>
+                        <li ><a class="hoveredtagsofcapital" href="https://www.thehindu.com/coronavirus/">CORONAVIRUS</a></li>
+                        <li ><a class="hoveredtagsofcapital"href="https://www.thehindu.com/opinion/">OPINION</a></li>
+                        <li ><a class="hoveredtagsofcapital"href="https://www.thehindu.com/business/">BUSINESS</a></li>
+                        <li ><a class="hoveredtagsofcapital"href="https://www.thehindu.com/sport/">SPORT</a></li>
+                        <li ><a class="underlinedtagsofcapital"href="https://crossword.thehindu.com/?utm_source=thehindu&utm_medium=mainmenu">CROSSWORD</a></li>
+                        <li ><a class="underlinedtagsofcapital"href="https://www.thehindu.com/coupons/">COUPONS</a></li>
+                        <li ><a class="underlinedtagsofcapital"href="https://www.thehindu.com/entertainment/">ENTERTAINMENT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+
+        <div>
+            <nav>
+                <div>
+                    <ul id="firstoffivebarslist">
+                        <li style="margin-right:3px;">THE SITE</li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/aboutus/">About Us</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/termsofuse/">Terms Of Use</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://thehindugroup.com/privacy.html">Privacy Policy</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/contacts/">Contacts</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/archive/">Archive</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="http://www.thehindugroup.in/subscribe/">Print Subscription</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=footer&utm_campaign=landingpage">e Paper</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/subscription/?utm_source=footer&utm_medium=section&utm_caign=website">Digital Subscription</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/rssfeeds/">Rss Feeds</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/sitemap/">Sitemap</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <nav>
+                <div>
+                    <ul id="firstoffivebarslist">
+                        <li style="margin-right:3px;">GROUP SITES</li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/">The Hindu</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.hindutamil.in/">இந்து தமிழ் திசை</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindubusinessline.com/">Business Line</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://bloncampus.thehindubusinessline.com/">BL on Campus</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://sportstar.thehindu.com/">Sportstar</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://frontline.thehindu.com/">Frontline</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehinducentre.com/">The Hindu Centre</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://roofandfloor.thehindu.com/?utm_source=thehindu&utm_medium=referral&utm_campaign=Internal-Marketing">RoofandFloor</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://step.thehindu.com/">STEP</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://ywc.thehindu.com/">Young World Club</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <nav>
+                <div>
+                    <ul id="firstoffivebarslist">
+                        <li><a  class="firstoffivebarslistitems" href="https://www.thehindu.com/publications/">Publications</a></li>
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/ebooks/">eBooks</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="https://thehinduimages.com/">Images</a> </li>
+                        <li><a class="firstoffivebarslistitems" href="http://www.thehinduclassifieds.in/">Classifieds</a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div>
+            <nav>
+                <div>
+                    <ul id="firstoffivebarslist">
+                        <li><a class="firstoffivebarslistitems" href="https://www.thehindu.com/contacts/">CONTACT US</a></li>
+                        <li style="margin-left:3px;">Copyright© 2022, THG PUBLISHING PVT LTD.</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
