@@ -16,6 +16,15 @@ section{
    width:67%;
     margin: auto;
 }
+.container-topPicks a{
+    text-decoration: none;  
+    color: #133b5a;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: "Fira Sans",sans-serif ;
+    padding-right:  5px;
+    font-weight: 600; 
+}
 .top-picks-container{
     display: flex;
     flex-direction: row;
@@ -23,6 +32,7 @@ section{
     background-color: #f1ecec;
     margin-bottom: 70px;
 }
+
 .top-picks-container > div{
         /* width: 23%; */
         background-color: white;
@@ -34,13 +44,28 @@ section{
     height: 135.6px;
 }
 .top-picks-container  p{
+    
     margin-left: 10px;
     margin-bottom: -10px;
     font-size: 14px;
     font-family: "TundraWeb", sans-serif;
     color: #282828;
 }
-.top-picks-container  h5{
+.top-picks-container h5 ::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    left: 0;
+    height: 0.5px;
+    background-color: black;
+}
+.top-picks-container  h5 :hover::after{
+    left: 0;
+    width: 100%;
+}
+.top-picks-container  a{
+    position: relative;
     margin-left: 10px;
     color: #828282;
     font-family: "Fira Sans", sans-serif;
@@ -61,24 +86,27 @@ section{
 }
 
 .container-heading{
-    width: 67%;
-    justify-content: space-between;
-}
-.container-heading > div {
+    width: 97%;
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
-.container-heading  a{
+.container-heading > div:first-child a{
     text-decoration: none;  
     color: #133b5a;
-    cursor: pointer;
     background-color: transparent;
     font-size: 22px;
     font-family: "Fira Sans",sans-serif ;
     padding-right:  5px;
+    font-weight: 600; 
+}
+.container-heading > div:last-child a{
+    font-size: 12px;
+    font-family: "Fira Sans",sans-serif;
     font-weight: 600;
-    text-transform: capitalize;
+    color: #505050;
+    line-height: 12px;
+    letter-spacing: .67px;
 }
 .container-heading:last-child{
     padding-left: 0;
@@ -86,7 +114,7 @@ section{
     margin-left: 0;
 }
 hr{
-    height: 1px;
+    height: 1.5px;
 }
 section .hr1{
     width: 770px;
@@ -95,7 +123,7 @@ section .hr1{
     border: none;
 }
 section .hr2{
-    width: 750px;
+    width: 800px;
     margin-top: -3px;
     background-color: #133b5a;
     border: none;
@@ -107,8 +135,16 @@ section .hr3{
     border: none;
     
 }
+section .hr4{
+    width: 830px;
+    margin-top: -3px;
+    background-color: green;
+    border: none;
+    /* margin-left: -5px; */
+}
 /* Opionion section down */
 .opinion-container{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -306,15 +342,15 @@ section .hr3{
     background-color: #133B5A;
     color: #faf9f6;
     padding: 2px 2px ;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
     border-bottom: 1px dashed #fff;
 
 }
 .trendingList >div:last-child {
     background-color: #fff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
     gap:20px;
 }
 .trendingList >div:last-child>div:first-child {
@@ -585,17 +621,27 @@ section .hr3{
     margin-bottom: 30px;
 }
 .container-sport{
+    width: 97%;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.container-sport a{
+.container-sport >div:first-child a{
     text-decoration: none;  
     color: green;
     background-color: transparent;
     font-size: 22px;
     font-family: "Fira Sans",sans-serif ;
-    padding-right:  5px;
     font-weight: 600;
-    text-transform: capitalize;
+}
+.container-sport > div:last-child a{
+    font-size: 12px;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 600;
+    color: #505050;
+    line-height: 12px;
+    letter-spacing: .67px;
 }
 .sport-right >div{
     display: flex;
@@ -640,4 +686,17 @@ section .hr3{
     font-weight: normal;
     margin-left: 15px;
     margin-bottom: 30px;
+}
+.container-heading > div:last-child a{
+    font-size: 12px;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 600;
+    color: #505050;
+    line-height: 12px;
+    letter-spacing: .67px;
+}
+.container-heading:last-child{
+    padding-left: 0;
+    border-left: none;
+    margin-left: 0;
 }

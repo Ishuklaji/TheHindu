@@ -7,327 +7,40 @@
     <link rel="stylesheet" href="lower.css">
     <title>Lower Body</title>
     <script src="https://kit.fontawesome.com/5c0ab3779c.js" crossorigin="anonymous"></script>
-    <!-- <style>
-        ul{
-            list-style-type: none;
-        }
-        body{
-            background-color: #f1ecec;
-        }
-        a{
-            text-decoration: none;
-        }
-        *{
-            box-sizing: border-box;
-            outline:  0 !important;
-            font-weight: normal;
-        }
-        section{
-            max-width: 1000px;
-            /* max-width: 500px; */
-            margin: auto;
-            padding: 10px;
-        }
-        .container-heading{
-            width: 1000px;
-            padding-right: 10px;
-            padding-left: 10px;
-            margin-right: auto;
-            margin-left: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .container-heading > div {
-            display: flex;
-            
-        }
-        .container-heading  a{
-            text-decoration: none;  
-            color: #133b5a;
-            cursor: pointer;
-            background-color: transparent;
-            font-size: 22px;
-            font-family: "Fira Sans",sans-serif ;
-            padding-right:  5px;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
-        .container-heading:last-child{
-            padding-left: 0;
-            border-left: none;
-            margin-left: 0;
-        }
-        hr{
-            height: 2px;
-        }
-        section .hr1{
-            width: 770px;
-            margin-top: -3px;
-            background-color: #133b5a;
-            border: none;
-        }
-        section .hr2{
-            width: 750px;
-            margin-top: -3px;
-            background-color: #133b5a;
-            border: none;
-        }
-        section .hr3{
-            width: 730px;
-            margin-top: -3px;
-            background-color: #133b5a;
-            border: none;
-            
-        }
-        .main{
-            padding-right: 10px;
-            padding-left: auto;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 40px;
-        }
-        .main > div{
-            width: auto;
-        }
-        .main .editorials{
-            background-color: #133b5a;
-            color: white;
-            font-family: "Fira Sans",sans-serif ;
-            margin-left: 10px;
-            margin-bottom: -5px;
-            width: auto;
-           
-        }
-        .main .editorials ul{
-            background-color: #133B5A;
-            padding: 7px 12px;
-            margin: 0px 0px 20px;
-            list-style-type: none;
-            margin-bottom: -10px;
-        }
-        .main .editorials ul h1{
-            
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .85px;
-        }
-        .main .editorials ul p{
-            font-size: 16px;
-            margin-top: -2px;
-            font-family: "TundraWeb",serif;
-        }
-        .main-img{
-            vertical-align: middle;
-            position: relative;
-            min-height: 1px;
-            padding-left: 10px;
-            padding-right: 10px;
-            width: 33.33333333%;
-        }
-        aside{
-            width: 30%;
-            float: right;
-        }
-        aside .row{
-            background-color: #133b5a;
-            z-index: 1;
-            color: white;
-            margin-top: -105px;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 5px;
-            border-bottom-left-radius: 30px;
-        }
-        aside h4{
-            
-            padding: 5px 15px;
-            margin-top: 3px;
-            margin-bottom: 3px;
-            font-size: 17px;
-            font-family: "Fira Sans",sans-serif;
-            font-weight: 600;
-            display: inline-flex;
-        }
-        aside .trending-list{
-            display: grid;
-            grid-template-rows: repeat(5, 1fr);
-            border: crimson;
-            width: 200px;
-            height: 2000px;
-            text-align: left;
-
-        }
-        aside .trending-list .trending-item{
-            display: grid ;
-        }
-        .grid-container{
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2,1fr);
-            /* border: 2px solid red;  */
-            grid-gap: 20px;
-            width: 610px;
-            margin-right: 20px;
-            
-        }
-        .grid-container > .col-1{
-            /* border: 2px solid blue; */
-            width: 110%;
-            height: 117px;
-            background-color: white;
-            margin-right: 20px;
-            
-        }
-        .grid-container ul{
-            margin-top: -100px;
-            margin-right: 10px;
-            margin-left: 85px;
-        }
-        .grid-container a{
-            text-decoration: none;
-        }
-        .grid-container .section-name a{
-            font-size: 12px;
-            letter-spacing: .85px;
-            margin-bottom: 4px;
-            font-family: "Fira Sans", sans-serif;
-            color: #133b5a;
-            font-weight: 600;
-        }
-        .grid-container .section-detail a{
-            font-size: 16px;
-            color: #282828;
-            font-family: "TundraWeb",serif;
-            margin-top: -2px;
-        }
-        .grid-container .section-owner a{
-            color: #828282;
-            font-family: "Fira Sans",sans-serif;
-            font-weight: 600;
-            font-size: 11px;
-            letter-spacing: 1px;
-            line-height: 15px;
-            margin: 0 0 5px;            
-        }
-        .grid-container > .col-2{
-            /* border: 2px solid blue; */
-            width: 110%;
-            height: 117px;
-            background-color: white;
-            
-        }
-        .grid-container > .col-3{
-            /* border: 2px solid blue; */
-            width: 110%;
-            height: 117px;
-            background-color: white; 
-        }
-
-        .grid-container > .col-3 h4{
-            width: 100%;
-            float: left;
-            position: relative;
-            height: 47px;
-        }
-        .top-picks-container{
-            display: flex;
-            flex-direction: row;
-            margin-top: 20px;
-            margin-left: 20px;
-            margin-right: 10px;
-            /* border: 2px solid red;  */
-            background-color: #f1ecec;
-            margin-bottom: 70px;
-        }
-        .top-picks-container > div{
-                /* border: 1px solid blue;  */
-                width: 23%;
-                /* flex: 1 1 auto; */
-                background-color: white;
-                margin-right: 20px;
-                
-        }
-        .top-picks-container img{
-            /* width: 100%; */
-            justify-content:space-between;
-            height: 135.6px;
-        }
-        .top-picks-container  p{
-            margin-left: 10px;
-            margin-bottom: -10px;
-            font-size: 14px;
-            font-family: "TundraWeb", sans-serif;
-            color: #282828;
-        }
-        .top-picks-container  h5{
-            margin-left: 10px;
-            color: #828282;
-            font-family: "Fira Sans", sans-serif;
-            font-weight: 600;
-            font-size: 11px;
-            letter-spacing: 1px;
-        }
-        .top-picks-container  h6{
-            color: #828282;
-            font-family: "Fira Sans", sans-serif;
-            font-weight: 600;
-            font-size: 11px;
-            letter-spacing: 1px;
-            float: right;
-            margin-right: 10px;
-            margin-top: -20px;
-            margin-bottom: 5px;
-        }
-        .container-explained a{
-            text-decoration: none;  
-            color: #133b5a;
-            cursor: pointer;
-            background-color: transparent;
-            font-size: 22px;
-            font-family: "Fira Sans",sans-serif ;
-            padding-right:  5px;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
-            
-    </style> -->
-
 </head>
 <body>
     <!-- Top Pickes Section -->
     <section>
-        <div class="container-heading">
+        <div class="container-topPicks">
             <div id="container-opinion"> <a href="#"> Top Picks </a> </div>
         </div>
-        <hr class="hr2">
+        <hr class="hr1">
         <div class =" top-picks-container">
             <div>
                 <img
                     src="https://th-i.thgim.com/public/incoming/gvb5t5/article65721083.ece/alternates/LANDSCAPE_320/vbk-nehru-rahul%20twitter.jpg" alt="img1"/>
-                <p> Congress, its leader change <br> social media display pics to <br> Nehru holding, tricolour</p>
-                <h5> PTI </h6>
+                <p>Congress, its leader change <br> social media display pics to <br> Nehru holding, tricolour </p>
+                <h5> <a href="#">THE HINDU BUREAU </a> </h6>
                 <h6> 55mins</h6>
             </div>
             <div>
                 <img
                     src="https://th-i.thgim.com/public/incoming/4x7dle/article65720516.ece/alternates/LANDSCAPE_320/Ayman%20al-Zawahri" alt="img2"/>
                 <p> Zawahiri read alone on <br> balcony, a pattern-of-life <br> intelligence CIA used to kill </p>
-                <h5> PTI </h5>
+                <h5> <a href="#"> THE HINDU BUREAU </a></h5>
                 <h6> 4hrs</h6>
             </div>
             <div>
                 <img
                     src="https://th-i.thgim.com/public/todays-paper/tp-business/9t5z77/article65660158.ece/alternates/LANDSCAPE_320/Review-spectrum%2BG0KA24K3R.3.jpg" alt="img1"/>
                 <p> Inside the 5G spectrum <br> auction is in focus podcat <br> See more news of this</p>
-                <h5>K. BHARAT KUMAR </h6>
-                    <h6> 4hrs</h6>
+                <h5> <a href="#">K. BHARAT KUMAR </a> </h6>
+                <h6> 4hrs</h6>
             </div>
             <div>
                 <img src="https://th-i.thgim.com/public/podcast/xhwozf/article65651979.ece/alternates/LANDSCAPE_320/PW%20Image.png" alt="IMG4">
                 <p>Monsoon Session Day 12: <br> Discussion on inflation, Wild <br> Life Protection (Amendment)</p>
-                <h5>THE HINDU BUREAU</h5>
+                <h5><a href="#">THE HINDU BUREAU</a> </h5>
                 <h6> 4hrs</h6>
             </div>
         </div>
@@ -336,10 +49,10 @@
     <!-- Opinion section -->
     <section>
         <div class="container-heading">
-            <div id="container-opinion"> <a href="#"> Opinion </a> </div>
-            <div id="container-see"> <a href="#"> See All </a> </div>
+            <div > <a href="#"> Opinion </a> </div>
+            <div > <a href="#"> See All </a> </div>
         </div>
-        <hr class="hr1">
+        <hr class="hr2">
         <!-- Editorials -->
         <div class="opinion-container">
             <div class="leftEditorial">
@@ -501,12 +214,12 @@
     </section>
 
     <!-- SPORT Section -->
-
     <section>
         <div class="container-sport">
-            <div id="container-opinion"> <a href="#" color="green"> Sport </a> </div>
+            <div ><a href="#"> Sport </a> </div>
+            <div> <a href="#">See All</a></div>
         </div>
-        <hr class="hr3">
+        <hr class="hr4">
         <div class="explained">
             <!-- sport Left -->
             <div class="explained-left">
@@ -560,6 +273,7 @@
         </div>
         
     </section>
+
     <!-- BUSINESS section -->
     <section>
         <div class="container-explained">
