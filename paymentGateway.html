@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD PAYMENT</title>
+    <!-- <link rel="stylesheet" href="card.css" /> -->
+    <style>
+        #create{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 20%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 1rem;
+    padding: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: -10px;
+    font-size: 20px;
+    color: navy;
+    margin-bottom: 30px;
+}
+label{
+    font-size: 20px;
+    color: navy;
+}
+a{
+  text-decoration: none;
+  color:aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing:content-box;
+}
+input[type="text" ],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type="number" ],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.form-row {
+    display: flex;
+  }
+  .form-group {
+    padding: 5px;
+    width: 50%;
+  }
+  
+  .form-group 
+   {
+    width: 100%;
+  }
+button {
+    width: 70%;
+    padding: 12px;
+    color: white;
+    background-color: orangered;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 50px;
+}
+    </style>
+</head>
+<body>
+    <div id="create">
+        <form id="card">
+            <!-- head -->
+            <h1> CARD DETAILS</h1>
+            <!-- Name -->
+            <label>Card Holder Name </label>
+            <input id="name" type="text" placeholder="Enter your Name" />
+            <!-- Card Nmber -->
+            <label >Card number:</label>
+            <input id="num" type="number"  data-mask="0000 0000 0000 0000" placeholder="Card Number" pattern="[000] [000] [000] [000]">
+            <!-- Dates -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label id="label1">Expiry date:</label>
+                    <input id="date" type="text" name="expiry-data"  placeholder="00 / 0000">
+                </div>
+                <div class="form-group">
+                    <label id="label2">CVV</label><br>
+                    <input id="cvv" type="text"  data-mask="000" placeholder="0000">
+                </div>
+            </div>
+            <button id="proceed-btn" type="submit"> PAY NOW</a>  </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", proceed);
+    function proceed(){
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        name.innertext=name;
+
+        var cardNum = document.getElementById("num").value == "1234123412341234";
+        var cVV = document.getElementById("cvv").value == "1234";
+        var date = document.getElementById("date").value == "12/1234"
+        if(cardNum  && cVV && date) {
+            window.location.href="otpPage.html"
+            return true;
+        }
+        else{
+            alert(" Wrong Credentials ");
+        }
+        
+        var date = document.getElementById("date").value;
+        
+}
+</script>
