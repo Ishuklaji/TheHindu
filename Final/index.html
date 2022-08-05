@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/5c0ab3779c.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* Hardeep CSS */
+    header {
+        flex-wrap: wrap;
+    }
+
+    section {
+        justify-content: space-around;
+    }
+
+    #container {
+        width: 80%;
+        margin: auto;
+        margin-left:-50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #first {
+        width: 50%;
+        margin: auto;
+        display: flex;
+    }
+
+    #first .sub-container {
+        width: 50%;
+        float: left;
+        display: flex;
+        border-right: 1px solid grey;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: -16px;
+    }
+
+    #search-box {
+        width: 80%;
+        margin: auto;
+        border-left: 1px solid grey;
+        justify-content: right;
+        margin-left: 600px;
+        display: flex;
+        margin-bottom: -10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    input {
+        border: none;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    i {
+        width: 40px;
+        text-align: center;
+    }
+
+    .hp {
+        text-align: center;
+        font-size: 12px;
+        margin-top: -4px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+    hr {
+        width: 80%;
+        background-color: grey;
+    }
+
+    form {
+        margin: auto;
+        display: flex;
+    }
+
+    button {
+        margin-left: 10px;
+        background-color: white;
+        border: none;
+        font-size: larger;
+    }
+
+    #logo {
+        margin: auto;
+        text-align: center;
+    }
+
+    .hp {
+        font-size: 11px;
+        position: relative;
+        line-height: 13px;
+        font-family: "Fira Sans", sans-serif;
+        margin: auto;
+    }
+
+    span {
+        width: 100%;
+        margin: auto;
+        padding: 0px 10px;
+    }
+
+    #latest-news {
+        font-weight: 600;
+        color: rgb(0, 97, 139);
+    }
+
+    #todaysdate {
+        font-weight: 600;
+        color: grey;
+    }
+
+    #nav {
+        width: 80%;
+        margin: auto;
+        display: block;
+        text-transform: uppercase;
+        justify-content: space-between;
+        margin-top: 14px;
+    }
+
+    .menuicon {
+        width: 38px;
+        float: left;
+    }
+
+    #navbar #menuicon {
+        font-size: 10px;
+        text-decoration: none;
+    }
+
+    #menu {
+        float: left;
+        margin-top: 18px;
+        font-size: 12px;
+        color: #5a5a5a;
+        letter-spacing: 1.2px;
+        line-height: 13px;
+        padding-bottom: 5px;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 13px;
+        font-weight: 600;
+    }
+
+    .active:hover {
+        text-decoration: underline;
+    }
+
+    #unordered-list {
+        margin: auto;
+        margin-left: -20px;
+    }
+
+    #button {
+        /* margin: auto; */
+        /* margin-left: -20px; */
+        margin-top: -25px;
+        float: right;
+        justify-content: space-around;
+    }
+
+    #button>#buttons {
+        font-weight: lighter;
+        font-size: 5px;
+    }
+
+    #trial {
+        border: 1px solid rgb(50, 50, 247);
+        padding: 10px 15px;
+        text-decoration: none;
+        background-color: rgb(50, 50, 247);
+        color: white;
+        justify-content: space-between;
+        margin-top: -5px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #trial:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #subscribe {
+        padding: 10px 15px;
+        color: black;
+        background-color: #ffc000;
+        justify-content: space-between;
+        margin-top: -5px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #subscribe:hover {
+        background-color: rgb(50, 50, 247);
+        color: white;
+        cursor: pointer;
+    }
+
+    #button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .sub-container #epaper1 {
+        color: black;
+        text-decoration: none;
+    }
+
+    #todayspaper a {
+        color: rgb(0, 97, 139);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    #nav2 {
+        width: 80%;
+        margin: auto;
+        margin-top: -2px;
+    }
+
+    #nav2 span {
+        color: red;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    #nav2 ul {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: -5px;
+        font-size: 14px;
+        font-weight: 300;
+        color: rgb(167, 157, 157);
+    }
+
+    #housing img {
+        display: inline-block;
+        position: relative;
+        width: 110px;
+    }
+
+    .navbar2:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .dropbtn {
+        background-color: white;
+        /* color:slategray; */
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        /* text-align: center; */
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        z-index: 1;
+        text-transform: uppercase;
+    }
+
+    .dropdown-menu a {
+        color: #5a5a5a;
+        padding: 15px 13px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-menu a:hover {
+        color: midnightblue;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropbtn {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        color: #5a5a5a;
+    }
+
+    /* Ish CSS */
+    body {
+        background-color: #F5F5F5;
+    }
+
+    .containup {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* border-top: 2px solid red; */
+    }
+
+    .containeup>.upper {
+        height: 300px;
+    }
+
+    .upper {
+        display: grid;
+        /* gap:10px; */
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 60%;
+        grid-row-gap: 10px;
+
+    }
+
+    .upper>div {
+        /* border: 1px solid blue; */
+        width: 95%;
+        margin: auto;
+
+        /* height: 50%; */
+    }
+
+    .right {
+        height: 490px;
+        margin-top: 15px;
+        background-color: white;
+    }
+
+    .left {
+        height: 490px;
+        background-color: white;
+    }
+
+    .left>div:last-child {
+        display: flex;
+        margin: auto;
+    }
+
+    .upper>.left>div>img {
+        width: 100px;
+        height: 108px;
+    }
+
+    .upper>.left>.big>img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .upper>.right>div {
+        margin-top: 15px;
+        /* border: 1px solid yellow; */
+        /* text-align: right; */
+    }
+
+    .right>div:first-child {
+        margin-top: 0px;
+    }
+
+    .right>div:last-child {
+        margin-top: 20px;
+    }
+
+    .upper>.right>div>img {
+        width: 100px;
+        height: 108px;
+    }
+
+    .right>div {
+        display: flex;
+        margin-top: -10px;
+        /* height: */
+    }
+
+    .big {
+        /* margin-top:0px; */
+        color: white;
+        background-color: #133B5A;
+        font-family: "TundraWeb", serif;
+        margin-bottom: 15px;
+
+    }
+
+    .small {
+        margin-left: 10px;
+        font-family: "TundraWeb", serif;
+    }
+
+    .small>a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .big>a>h3 {
+        color: white;
+        font-family: "TundraWeb", serif;
+    }
+
+    .big>h4 {
+        margin-top: -10px;
+        margin-bottom: -10px;
+        color: white;
+    }
+
+    .small>h4 {
+        color: #133B5A;
+        margin-top: -0.5px;
+        margin-bottom: -10px;
+    }
+
+    .list {
+        width: 60%;
+        height: 250px;
+        background-color: #E5E5E2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-row-gap: 10px; */
+        flex-wrap: wrap;
+    }
+
+    .list>div {
+        width: 90%;
+
+    }
+
+    .list>div>div>a {
+        font-size: 13px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        /* row-gap: 20px; */
+        /* width:33%; */
+        line-height: 15.5px;
+        /* display: flex; */
+        letter-spacing: -.1px;
+        color: #828282;
+        margin-bottom: 27px;
+        max-height: 46px;
+        /* overflow: hidden; */
+    }
+
+    .list p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .list b {
+        color: red;
+    }
+
+    .below {
+        font-family: "TundraWeb", serif;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        gap: 20px;
+        /* flex-direction: row; */
+        background-color: white;
+    }
+
+    .below>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        /* margin: auto; */
+    }
+
+    .below>div>div>img {
+        height: 108px;
+        width: 100px;
+        margin: auto;
+
+    }
+
+    #ss {
+        width: 60%;
+    }
+
+/* Nikita CSS */
+ul{
+    list-style-type: none;
+}
+/* body{
+    background-color: #f1ecec;
+} */
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+    outline:  0 !important;
+    font-weight: normal;
+}
+section{
+   width:80%;
+    margin: auto;
+}
+.container-topPicks a{
+    text-decoration: none;  
+    color: #133b5a;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: "Fira Sans",sans-serif ;
+    padding-right:  5px;
+    font-weight: 600; 
+}
+.top-picks-container{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-direction: row;
+    margin-top: 20px;
+    /* background-color: #f1ecec; */
+    margin-bottom: 70px;
+}
+
+.top-picks-container > div{
+        /* width: 23%; */
+        background-color: white;
+        margin-right: 20px;
+        
+}
+.top-picks-container img{
+    justify-content:space-between;
+    height: 135.6px;
+}
+.top-picks-container  p{
+    
+    margin-left: 10px;
+    margin-bottom: -10px;
+    font-size: 14px;
+    font-family: "TundraWeb", sans-serif;
+    color: #282828;
+}
+.top-picks-container h5 ::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    left: 0;
+    height: 0.5px;
+    background-color: black;
+}
+.top-picks-container  h5 :hover::after{
+    left: 0;
+    width: 100%;
+}
+.top-picks-container  a{
+    position: relative;
+    margin-left: 10px;
+    color: #828282;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.top-picks-container  h6{
+    color: #828282;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+    float: right;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+.container-heading{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-heading > div:first-child a{
+    text-decoration: none;  
+    color: #133b5a;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: "Fira Sans",sans-serif ;
+    padding-right:  5px;
+    font-weight: 600; 
+}
+.container-heading > div:last-child a{
+    font-size: 12px;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 600;
+    color: #505050;
+    line-height: 12px;
+    letter-spacing: .67px;
+}
+.container-heading:last-child{
+    padding-left: 0;
+    border-left: none;
+    margin-left: 0;
+}
+hr{
+    height: 1.5px;
+}
+section .hr1{
+    width: 770px;
+    margin-top: -3px;
+    background-color: #133b5a;
+    border: none;
+}
+section .hr2{
+    width: 800px;
+    margin-top: -3px;
+    background-color: #133b5a;
+    border: none;
+}
+section .hr3{
+    width: 730px;
+    margin-top: -3px;
+    background-color: #133b5a;
+    border: none;
+    
+}
+section .hr4{
+    width: 830px;
+    margin-top: -3px;
+    background-color: green;
+    border: none;
+    /* margin-left: -5px; */
+}
+/* Opionion section down */
+.opinion-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+.leftEditorial{
+    width: 65%;
+}
+.trendingList{
+    width: 30%;
+}
+/* left portion editorial */
+.main{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main > div{
+    width: auto;
+}
+.main .editorials{
+    background-color: #133b5a;
+    color: white;
+    font-family: "Fira Sans",sans-serif ;
+}
+.main .editorials ul{
+    background-color: #133B5A;
+    padding: 7px 12px;
+    margin: 0px 0px 20px;
+    list-style-type: none;
+    margin-bottom: -10px;
+}
+.main .editorials ul h1{
+    
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .85px;
+}
+.main .editorials ul p{
+    font-size: 16px;
+    margin-top: -2px;
+    font-family: "TundraWeb",serif;
+}
+.main>div{
+    width:30%;
+}
+.main-img>img{
+    background-color: white;
+    width: 100%;
+}
+.main-container{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top:20px;
+    
+}
+.main-container>div:first-child{
+    position: relative;
+    background-color: white;
+}
+.main-container>div:last-child{
+    position: relative;
+    background-color: white;
+}
+.main-container>div:first-child>img{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+.main-conatiner-content{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+.main-conatiner-content .article-inside{
+    display: flex;
+    flex-direction: column;
+    margin-top:5px;
+    gap:5px;
+}
+.main-conatiner-content .article-inside>div:first-child{
+    color: #133b5a;
+    letter-spacing: .85px;
+    font-size: 12px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.main-conatiner-content .article-inside>div:nth-child(2){
+    color: #282828;
+    font-size: 16px;
+    font-family: "TundraWeb", serif;
+    margin-top: -2px;
+    display: block;
+}
+.main-conatiner-content .article-inside>div:last-child{
+    color: #828282;
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: -2px;
+}
+.main-container>div:last-child>img{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+.cartoon{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.cartoon>div:first-child{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.cartoon>div:first-child>:first-child{
+    width:100%;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: .85px;
+    color: #133b5a;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.cartoon-header > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cartoon-header > div:nth-child(2) > div:first-child{
+    line-height: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    color: #aaa;
+    margin-left: 5px;
+}
+.cartoon-header > div:nth-child(2) > div:last-child{
+    line-height: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    color: #aaa;
+    margin-right: 5px;
+}
+.cartoon-header > div:last-child > img{
+    width: 100%;
+}
+.cartoon>div:first-child>:nth-child(2){
+    /* border:1px solid green; */
+    width:100%;
+}
+.cartoon>div:first-child>:last-child{
+    width:100%;
+}
+.cartoon>div:last-child{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.cartoon>div:last-child>:first-child{
+    background-color: white;
+    width:100%;
+    position: relative;
+}
+.cartoon>div:last-child>:first-child >img{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+.cartoon>div:last-child>:last-child{
+    width:100%;
+    background-color: white;
+    position: relative;
+}
+.cartoon>div:last-child>:last-child >img{
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+/* TRENDING */
+.trendingList >div:first-child{
+    background-color: #133B5A;
+    color: #faf9f6;
+    padding: 2px 2px ;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom: 1px dashed #fff;
+
+}
+.trendingList >div:last-child {
+    background-color: #fff;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    gap:20px;
+}
+.trendingList >div:last-child>div:first-child {
+    text-align: center;
+}
+.trendingList >div:last-child>div:last-child {
+    text-align: center;
+    bottom: 20px;
+}
+.trendingList >div:last-child>div:nth-child(2) p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "TundraWeb",serif;
+    color: #282828;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dashed #282828;
+ }
+ 
+.trendingList >div:last-child>div:nth-child(2) span {
+    font-size: 16px;
+   font-family: "Fira Sans",sans-serif;
+   font-weight: 600;
+   color: #133b5a;
+   margin-top: 30px;
+   margin-left: 10px;
+}
+.trendingList >div:last-child>div:nth-child(3) p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "TundraWeb",serif;
+    color: #282828;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dashed #282828;
+ }
+ 
+.trendingList >div:last-child>div:nth-child(3) span {
+    font-size: 16px;
+   font-family: "Fira Sans",sans-serif;
+   font-weight: 600;
+   color: #133b5a;
+   margin-left: 10px;
+}
+.trendingList >div:last-child>div:nth-child(4) p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "TundraWeb",serif;
+    color: #282828;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dashed #282828;
+    
+ }
+ 
+.trendingList >div:last-child>div:nth-child(4) span {
+    font-size: 16px;
+   font-family: "Fira Sans",sans-serif;
+   font-weight: 600;
+   color: #133b5a;
+   margin-left: 10px;
+}
+.trendingList >div:last-child>div:nth-child(5) p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "TundraWeb",serif;
+    color: #282828;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dashed #282828;
+ }
+ 
+.trendingList >div:last-child>div:nth-child(5) span {
+    font-size: 16px;
+   font-family: "Fira Sans",sans-serif;
+   font-weight: 600;
+   color: #133b5a;
+   margin-left: 10px;
+}
+.trendingList >div:last-child>div:nth-child(6) p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "TundraWeb",serif;
+    color: #282828;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dashed #282828;
+ }
+ 
+.trendingList >div:last-child>div:nth-child(6) span {
+    font-size: 16px;
+   font-family: "Fira Sans",sans-serif;
+   font-weight: 600;
+   color: #133b5a;
+   margin-top: 30px;
+   margin-left: 10px;
+}
+/* Explained */
+.explained{
+    display: flex;
+    flex: row;
+    gap: 20px;
+}
+.container-explained{
+    margin-top: 30px;
+}
+.container-explained a{
+    text-decoration: none;  
+    color: #133b5a;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: "Fira Sans",sans-serif ;
+    padding-right:  5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.explained-left {
+    margin-top: 10px;
+    width:65%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    background-color: white;
+}
+.explained-left >div:first-child >div:first-child >img{
+    width:100%;
+   
+}
+.explained-left >div:first-child>div:nth-child(2){
+    width:100%;
+    margin-left: 5px;
+    font-family: "TundraWeb", sans-serif;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -.5px;
+    color: #282828;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.explained-left >div:first-child>div:nth-child(3){
+    color: #828282;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    text-transform: uppercase !important;
+    margin-left: 5px;
+    
+}
+.explained-left >div:first-child>div:last-child{
+    font-size: 14px;
+    line-height: 17px;
+    color: #505050;
+    margin-left: 5px;
+}
+.explained-left>div:last-child>div:first-child{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom:10px;
+    margin-right: 20px;
+    gap: 10px;
+    border-bottom: 1px dashed #828282;
+}
+.explained-left>div:last-child>div:first-child >div:last-child{
+    margin-right: 10px;
+    font-family: "TundraWeb",serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+.explained-left>div:last-child>div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+    margin-right: 20px;
+    gap: 10px;
+    border-bottom: 1px dashed #828282;
+}
+.explained-left>div:last-child>div:nth-child(2) >div:last-child{
+    margin-right: 10px;
+    font-family: "TundraWeb",serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+.explained-left>div:last-child>div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+    margin-right: 20px;
+    gap: 10px;
+    border-bottom: 1px dashed #828282;
+}
+.explained-left>div:last-child>div:nth-child(3) >div:last-child{
+    margin-right: 10px;
+    font-family: "TundraWeb",serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+.explained-left>div:last-child>div:last-child{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    gap: 10px;
+}
+.explained-left>div:last-child>div:last-child >div:last-child{
+    margin-right: 10px;
+    font-family: "TundraWeb",serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #282828;
+}
+.explained > div:last-child{
+    /* border: 1px solid darkblue; */
+    width:30%;   
+    margin-top: 10px;
+}
+.explained-right >div{
+    display: flex;
+    flex-direction: column;
+    background-color: #133b5a;
+    color: #fff;
+}
+.explained-right >div:first-child{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dashed #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.explained-right >div:first-child >div:first-child{
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    color: #faf9f6;
+}
+.explained-right >div:nth-child(2){
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.explained-right >div:nth-child(2)>p{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+.explained-right >div:nth-child(3)>p{
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: normal;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.container-sport{
+    width: 97%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-sport >div:first-child a{
+    text-decoration: none;  
+    color: green;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: "Fira Sans",sans-serif ;
+    font-weight: 600;
+}
+.container-sport > div:last-child a{
+    font-size: 12px;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 600;
+    color: #505050;
+    line-height: 12px;
+    letter-spacing: .67px;
+}
+.sport-right >div{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    color: #fff;
+}
+.sport-right >div:first-child{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dashed #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sport-right >div:first-child >div:first-child{
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    color: #faf9f6;
+}
+.sport-right >div:nth-child(2){
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sport-right >div:nth-child(2)>p{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+.sport-right >div:nth-child(3)>p{
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: normal;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.container-heading > div:last-child a{
+    font-size: 12px;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 600;
+    color: #505050;
+    line-height: 12px;
+    letter-spacing: .67px;
+}
+.container-heading:last-child{
+    padding-left: 0;
+    border-left: none;
+    margin-left: 0;
+}
+
+    /* Media queries should be at bottom only */
+    /* Medium screens */
+    @media all and (min-width: 451px) and (max-width: 750px) {
+        .containup {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .upper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .list {
+            display: none;
+        }
+
+        .below {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .below>div {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #menu{
+            display:none;
+        }
+        #nav2{
+            display:none;
+        }
+    }
+
+    /* Small screens */
+    @media all and (min-width: 100px) and (max-width: 450px) {
+        .containup {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .upper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .list {
+            display: none;
+        }
+
+        .below {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .below>div {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #menu{
+            display:none;
+        }
+        #nav2{
+            display:none;
+        }
+    }
+</style>
+
+<body>
+    <!-- Hardeep HTML -->
+    <header>
+        <section>
+            <div id="container">
+                <div id="first">
+                    <div class="sub-container"><a href="https://www.facebook.com/thehindu" target="_blank"
+                            title="Connect to Facebook" rel="noopener">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a href="https://twitter.com/The_Hindu" target="_blank"
+                            title="Connect to Facebook" rel="noopener">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a href="https://www.linkedin.com/school/the-hindu/" target="_blank"
+                            title="Connect to Facebook" rel="noopener">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a href="https://www.instagram.com/the_hindu/?ref=badge" target="_blank"
+                            title="Connect to Facebook" rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a href="https://t.me/THnewsupdates" target="_blank"
+                            title="Connect to Facebook" rel="noopener">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a href="https://www.thehindu.com/newsletter-subscription/"
+                            target="_blank" title="Connect to Facebook" rel="noopener">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a href="https://www.thehindu.com/social/" target="_blank"
+                            title="Connect to Facebook" rel="noopener">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </a>
+                    </div>
+
+                    <div class="sub-container"><a
+                            href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage"
+                            target="_blank" title="Connect to Facebook" id="epaper1" rel="noopener">
+                            <p class="hp">ePaper</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="search-box">
+                    <form action="">
+                        <input type="text" placeholder="Search here">
+                        <button type="submit" title="a"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <section class="logo-block">
+            <div id="logo" class="logo">
+                <a href="www.thehindu.com" target="_blank" title="the_hindu" rel="noopener">
+                    <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="The Hindu">
+                </a>
+                <p class="hp">
+                    <span id="latest-news">LATEST NEWS </span>
+                    <span id="todaysdate"></span>
+                    <span id="todayspaper">
+                        <a href="https://epaper.thehindu.com/?utm_source=Hindu&utm_medium=Menu&utm_campaign=Header"
+                            rel="noopener"> E-PAPER</a>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <nav id="nav">
+            <div id="navbar">
+                <div class="menuicon"><a href="">
+                        <p id="menuicon">menu</p><i class="fa-solid fa-bars" id="icon"></i>
+                    </a></div>
+            </div>
+            <div id="menu">
+                <ul id="unordered-list">
+                    <li class="active">Today's Paper</li>
+                    <li class="dropdown"><button class="dropbtn"> News</button>
+                        <div class="dropdown-menu">
+                            <a href="#">India</a>
+                            <a href="#">World</a>
+                            <a href="#">Cities</a>
+                            <a href="#">States</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn">Opinion</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Cartoons</a>
+                            <a href="#">Columns</a>
+                            <a href="#">Editorial</a>
+                            <a href="#">Interview</a>
+                            <a href="#">Lead</a>
+                            <a href="#">Readers Editor</a>
+                            <a href="#">Comment</a>
+                            <a href="#">Open Page</a>
+                            <a href="#">Letters</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn"> business</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Agri-Business</a>
+                            <a href="#">Industry</a>
+                            <a href="#">Economy</a>
+                            <a href="#">Markets</a>
+                            <a href="#">Budget 2022</a>
+                            <a href="#">Stock Quotes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn">sport</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Cricket</a>
+                            <a href="#">FootBall</a>
+                            <a href="#">Hockey</a>
+                            <a href="#">Tennis</a>
+                            <a href="#">Atheletics</a>
+                            <a href="#">MotorSport</a>
+                            <a href="#">Races</a>
+                            <a href="#">Other Sports</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn">entertainment</button>
+                        <div class="dropdown-menu">
+                            <a href="#">Art</a>
+                            <a href="#">Dance</a>
+                            <a href="#">Movies</a>
+                            <a href="#">Music</a>
+                            <a href="#">Reviews</a>
+                            <a href="#">Theater</a>
+                        </div>
+                    </li>
+                    <li class="active">crossword+</li>
+                    <!-- <li class="active">science</li> -->
+                </ul>
+            </div>
+            <div id="button">
+                <ul id="buttons">
+                    <li id="trial"><a
+                            href="signin.html">Get
+                            Trial</li>
+                    <li id="subscribe"><a href="subscribe.html" id="subscribeit">Subscribe
+                            now</a></li>
+                    <li id="trial"><a id="hpa" href="signin.html">log in</a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <nav id="nav2">
+            <span>Trending Today</span>
+            <ul>
+                <li class="navbar2">Chennai Chess Olympiad</li>
+                <li class="navbar2">Parliament Proceedings</li>
+                <li class="navbar2">Monkeypox</li>
+                <li class="navbar2">Coronavirus</li>
+                <li id="housing"><a href="https://www.thehindu.com/housing-real-estate-india/"><img
+                            src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="housing"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Ish HTML -->
+    <div class="containup">
+        <div class="upper">
+            <div class="left">
+                <div class="big">
+                    <img src="https://th-i.thgim.com/public/news/international/up3ncf/article65718367.ece/alternates/FREE_1200/Taiwan_Asia_Pelosi_18808.jpg-7ec1b.jpg"
+                        alt="newspic">
+                    <a href="world.html">
+                        <h3>U.S. House Speaker Nancy Pelosi lands in Taiwan, China warns of countermeasures</h3>
+                    </a>
+                    <h4>ANANTH KRISHNAN</h4>
+                    <p>U.S. House Speaker Nancy Pelosi has arrived in Taiwan despite threats from Beijing of serious
+                        consequences, becoming the highest-ranking</p>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/vbisbc/article65717284.ece/alternates/FREE_1200/17_Interfaith_Conference_30_07_Delhi.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <a href="india.html">
+                            <p>Modi govt. renews push to reach out to Muslim community</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="https://th-i.thgim.com/public/news/national/brwbrp/article65427716.ece/alternates/FREE_1200/iStock-494713884%20%282%29.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>ECONOMY</h4>
+                        <a href="economy.html">
+                            <p>Centre cuts jet fuel and diesel taxes, hikes petroleum crude export tax</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/l5267/article65718349.ece/alternates/FREE_1200/AFP_32FU7CC.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <a href="india.html">
+                            <p>Central officials assessing impact of Zawahiri’s killing on al-Qaeda’s presence in India
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/hzikv6/article65718317.ece/alternates/FREE_1200/PTI08_02_2022_000119B.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <a href="india.html">
+                            <p>Parliament proceedings | No one is denying price rise, constant efforts on to control it:
+                                Nirmala
+                                Sitharaman</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/x45rfo/article65718463.ece/alternates/FREE_1200/PTI08_02_2022_000338A.jpg"
+                        alt="newspic">
+                    <div class="small">
+                        <h4>INDIA</h4>
+                        <a href="india.html">
+                            <p>Today, world looks at India and Tricolour with respect: Amit Shah </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="list">
+            <div>
+                <div>
+                    <a href="trending.html">
+                        <p>1 <b>2 mins</b> New Delhi maintains ‘studied silence’ on Taiwan crisis</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="trending.html">
+                        <p>2 <b>7 mins</b> Kerala rain: High alert in Puthenvelikkara, Chendamangalam panchayats in
+                            Ernakulam
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="trending.html">
+                        <p>3 <b>12 mins</b> As Jammu and Kashmir completes three years without special status, Delhi’s
+                            worries remain on many fronts</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="trending2.html">
+                        <p>4 <b>29 mins</b> Hurriyat chairman Mirwaiz completes three years in house detention</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="trending2.html">
+                        <p>5 <b>32 mins</b> Calcutta High Court rejects arrested Jharkhand MLAs plea for probe by
+                            Central
+                            agencies</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="trending2.html">
+                        <p>6 <b>37 mins</b> Include Lachit Borphukan’s valour in textbooks: Assam CM</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="trending3.html">
+                        <p>7 <b>40 mins</b> LoP being summoned during Parliamentary proceedings has never happened in
+                            history, Congress alleges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="trending3.html">
+                        <p>8 <b>42 mins</b> Parliament proceedings | Government says 130 ‘hate news’ cases reported
+                            between
+                            2019 Lok Sabha elections </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="trending3.html">
+                        <p>9 <b>45 mins</b> ICMR starts new initiative in northeast</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="below">
+            <div>
+                <div><img
+                        src="https://th-i.thgim.com/public/incoming/q6ggt/article65720164.ece/alternates/FREE_1200/PTI07_31_2022_000290B.jpg"
+                        alt="newspic">
+                </div>
+                <div class="small">
+                    <h4>JHARKHAND MLAS CASH SEIZURE | OTHER STATES</h4>
+                    <a href="comments.html">
+                        <p>Bengal CID 'restrained' from conducting raid</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/news/national/tamil-nadu/ogvh5t/article65005839.ece/alternates/FREE_1200/thvli-Enforcement-Directorate-ED"
+                        alt="newspic">
+                </div>
+                <div class="small">
+                    <h4>OTHER STATES</h4>
+                    <a href="comments.html">
+                        <p>Yes Bank-DHFL case | Enforcement Directorate attaches ₹415 crore worth assets of builders</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <a href="covid.html"><img src="Screenshot.png" alt="pic" id="ss"></a>
+    </div>
+    
+    
+    <!-- Nikita HTML -->
+
+    <!-- Top Pickes Section -->
+    <section>
+        <div class="container-topPicks">
+            <div id="container-opinion"> <a href="trending.html"> Top Picks </a> </div>
+        </div>
+        <hr class="hr1">
+        <div class =" top-picks-container">
+            <div>
+                <img
+                    src="https://th-i.thgim.com/public/incoming/gvb5t5/article65721083.ece/alternates/LANDSCAPE_320/vbk-nehru-rahul%20twitter.jpg" alt="img1"/>
+                <p>Congress, its leader change <br> social media display pics to <br> Nehru holding, tricolour </p>
+                <h5> <a href="#">THE HINDU BUREAU </a> </h6>
+                <h6> 55mins</h6>
+            </div>
+            <div>
+                <img
+                    src="https://th-i.thgim.com/public/incoming/4x7dle/article65720516.ece/alternates/LANDSCAPE_320/Ayman%20al-Zawahri" alt="img2"/>
+                <p> Zawahiri read alone on <br> balcony, a pattern-of-life <br> intelligence CIA used to kill </p>
+                <h5> <a href="#"> THE HINDU BUREAU </a></h5>
+                <h6> 4hrs</h6>
+            </div>
+            <div>
+                <img
+                    src="https://th-i.thgim.com/public/todays-paper/tp-business/9t5z77/article65660158.ece/alternates/LANDSCAPE_320/Review-spectrum%2BG0KA24K3R.3.jpg" alt="img1"/>
+                <p> Inside the 5G spectrum <br> auction is in focus podcat <br> See more news of this</p>
+                <h5> <a href="#">K. BHARAT KUMAR </a> </h6>
+                <h6> 4hrs</h6>
+            </div>
+            <div>
+                <img src="https://th-i.thgim.com/public/podcast/xhwozf/article65651979.ece/alternates/LANDSCAPE_320/PW%20Image.png" alt="IMG4">
+                <p>Monsoon Session Day 12: <br> Discussion on inflation, Wild <br> Life Protection (Amendment)</p>
+                <h5><a href="#">THE HINDU BUREAU</a> </h5>
+                <h6> 4hrs</h6>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opinion section -->
+    <section>
+        <div class="container-heading">
+            <div > <a href="comments.html"> Opinion </a> </div>
+            <div > <a href="comments.html"> See All </a> </div>
+        </div>
+        <hr class="hr2">
+        <!-- Editorials -->
+        <div class="opinion-container">
+            <div class="leftEditorial">
+                <div class="main" >
+                    <div class="main-img">
+                        <img src="https://www.thehindu.com/theme/images/th-online/editorLogo.png" alt="editorials" >
+                    </div>
+                    <div class="editorials">
+                        <ul>
+                            <li><h1> EDITORIAL</h1></li>
+                            <li class="abc"><p>Death of a face: on the elimination of al-Qaeda leader Ayman al-Zawahiri</p></li>
+                        </ul>
+                    </div>
+                    <div class="editorials">
+                        <ul>
+                            <li><h1>EDITORIAL</h1></li>
+                            <li> <p>Language as barrier: On <br> making mother tongue</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-container">
+                    <div class="main-conatiner-content">
+                        <!-- premium img -->
+                        <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/6nm8pg/article65717536.ece/alternates/SQUARE_115/collect_free_mixies__7.jpg" >
+                        </div>
+                        <div class="article-inside">
+                            <div>Lead</div>
+                            <div>Making sense of the 'freebies' issue</div>
+                            <div>DIPA SINHA</div>
+                        </div>
+                    </div>
+                    <div class="main-conatiner-content">
+                        <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/2n1qg/article65722627.ece/alternates/SQUARE_115/NDBL-4-8-9-12.jpg" >
+                        </div>
+                        <div class="article-inside">
+                            <div>comment</div>
+                            <div>Public assests sale and the concern of 'fiduciary duty'</div>
+                            <div>PUHAZH GANDHI P.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartoon">
+                    <div class="cartoon-header">
+                        <div>cartoon</div>
+                        <div class="inside-cartoon">
+                            <div><i class="fa-solid fa-comment"></i> 32 </div>
+                            <div>VIEW ALL</div>
+                        </div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/latest-news/rcert2/article65668263.ece/alternates/LANDSCAPE_560/Tribal-President.JPG" alt="">
+                        </div> 
+                        
+                    </div>
+                    <div >
+                        <div class="main-conatiner-content">
+                            <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                            <div>
+                                <img src="https://th-i.thgim.com/public/incoming/rxqui5/article65722566.ece/alternates/SQUARE_115/PTI07_11_2022_000067A.jpg" >
+                            </div>
+                            <div class="article-inside">
+                                <div>comment</div>
+                                <div>Reaping the demographic dividend</div>
+                                <div>UDAY BALAKRISHNAN</div>
+                            </div>
+                        </div>
+                        <div class="main-conatiner-content">
+                            <img src="https://www.thehindu.com/theme/images/th-online/premiumsymbolnormal.png" alt="">
+                            <div>
+                                <img src="https://th-i.thgim.com/public/news/national/913v3w/article65723247.ece/alternates/SQUARE_115/Indian%20ocean.jpeg" >
+                            </div>
+                            <div class="article-inside">
+                                <div>comment</div>
+                                <div>Bring back the dhow route</div>
+                                <div>MOHAMMAD NASHEED</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trendingList">
+                <div><p>Trending on The Hindu</p></div>
+                <div>
+                    <div><i class="fa-solid fa-caret-up"></i></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media <br><br></p></div>
+                    <div> <p><span><i class="fa-regular fa-eye"></i> 13K</span> Chinese military begins 'strategic' drills around Taiwan: state media<br><br></p></div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+                
+        </div>
+        
+        
+    </section>
+
+    <!-- Explained section -->
+    <section>
+        <div class="container-explained">
+            <div id="container-opinion"> <a href="world.html"> Explained </a> </div>
+        </div>
+        <hr class="hr3">
+        <div class="explained">
+            <!-- Explained Left -->
+            <div class="explained-left">
+                <div>
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/8b9g30/article65727685.ece/alternates/LANDSCAPE_320/IMG-20220430-WA0003.jpg" alt="">
+                    </div>
+                    <div>Explained | The coal mining protests in the Hasdeo Aranya region</div>
+                    <div>SHUBHOMOY SIKDAR</div>
+                    <div>Why has a private member resolution against coal mining in the Hasdeo forests been passed by the Chhattisgarh Legislative Assembly?</div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/9bfezs/article65726113.ece/alternates/LANDSCAPE_100/2022-08-04T000432Z_756401568_RC2NOV98QDEI_RTRMADP_3_USA-ELECTION-ABORTION.JPG" alt="">
+                        </div>
+                        <div> Explained | Will the Kansas win on abortion have a bearing on other U.S. states? </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/cwyplk/article65723237.ece/alternates/LANDSCAPE_100/2022-08-01T231106Z_2002231278_RC2LHZ5TVB28_RTRMADP_3_AFGHANISTAN-CONFLICT-USA-ZAWAHIRI.JPG" alt="">
+                        </div>
+                        <div> Explained | Who was al-Qaeda chief Ayman al-Zawahiri? </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/i9ncup/article65723184.ece/alternates/LANDSCAPE_100/PTI10_28_2021_000101B.jpg" alt="">
+                        </div>
+                        <div> Explained | Understanding the provisions for foreign visits of State government Ministers </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/17w5dt/article65720228.ece/alternates/LANDSCAPE_100/IMG_TH_-_LSE_KIIFB_Edit__2_1_GG979SOU.jpg" alt="">
+                        </div>
+                        <div> Explained | Kerala’s mounting public debt</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Explained Right -->
+            <div class="explained-right">
+                <div>
+                    <div>Explained | Has bail under PMLA become near-impossible? </div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+                <div> <p> How has the Supreme Court changed its view on Section 45 (1) of the Prevention of Money Laundering Act, 2002?</p></div>
+                <div> <p>G.S. BAJPAIANKIT KAUSHIK</p> </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/iupwu3/article65718496.ece/alternates/LANDSCAPE_300/IMG_prison_bars_2_1_CHA1QEA8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- SPORT Section -->
+    <section>
+        <div class="container-sport">
+            <div ><a href="sports.html"> Sport </a> </div>
+            <div> <a href="sports.html">See All</a></div>
+        </div>
+        <hr class="hr4">
+        <div class="explained">
+            <!-- sport Left -->
+            <div class="explained-left">
+                <div>
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/taro3h/article65726027.ece/alternates/LANDSCAPE_320/AP08_03_2022_000002B.jpg" alt="">
+                    </div>
+                    <div>Commonwealth Games 2022 | P.V. Sindhu sails into women's singles pre-quarters</div>
+                    <div>PTI</div>
+                    <div>Sindhu outfoxed her opponent with her all-round game to book a place in the pre-quarterfinals</div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/sport/other-sports/2henk0/article65700177.ece/alternates/LANDSCAPE_100/1411574228.jpg" alt="">
+                        </div>
+                        <div> Commonwealth Games 2022 | Indians in action on August 4, 2022</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/uwxnjv/article65725380.ece/alternates/LANDSCAPE_100/1412742593.jpg" alt="">
+                        </div>
+                        <div> IOC to take a decision in 2023 on cricket’s inclusion in 2028 Los Angeles Olympic Games</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/qq3i2b/article65725190.ece/alternates/LANDSCAPE_100/australia%20children%20cricket" alt="">
+                        </div>
+                        <div> Australian cricket fears ‘missing generation’ after COVID-19</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/news/national/i8fys/article65725634.ece/alternates/LANDSCAPE_100/i.jpeg" alt="">
+                        </div>
+                        <div> Chelsea’s Koulibaly tells Napoli owner to show respect over AFCON comments</div>
+                    </div>
+                </div>
+            </div>
+            <!-- sport Right -->
+            <div class="sport-right">
+                <div>
+                    <div>Tejaswin Shankar wins bronze in men's high jump</div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+                <div> <p> The 23-year-old Shankar was added in the squad last-minute on the orders of Delhi High Court</p></div>
+                <div> <p>PTI</p> </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/ni5682/article65723903.ece/alternates/LANDSCAPE_300/AP08_04_2022_000031B.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- BUSINESS section -->
+    <section>
+        <div class="container-explained">
+            <div id="container-opinion"> <a href="economy.html"> Business </a> </div>
+        </div>
+        <hr class="hr3">
+        <div class="explained">
+            <!-- business Left -->
+            <div class="explained-left">
+                <div>
+                    <div>
+                        <img src="https://th-i.thgim.com/public/incoming/ixr67h/article65727763.ece/alternates/LANDSCAPE_320/PTI8_4_2022_00101000004B.jpg" alt="">
+                    </div>
+                    <div>EMarkets halt 6-day rally; end marginally lower</div>
+                    <div>PTI</div>
+                    <div>The broader NSE Nifty dipped 6.15 points or 0.04% to finish at 17,382.</div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/oyg88f/article65726095.ece/alternates/LANDSCAPE_100/IMG_ISBS---PTI8142018000_2_1_Q0A24HN6.jpg" alt="">
+                        </div>
+                        <div> Rupee falls 17 paise to close at 79.32 against U.S. dollar</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/iagx1n/article65726143.ece/alternates/LANDSCAPE_100/CB26_miniature_chess_pieces_1.jpg" alt="">
+                        </div>
+                        <div> Gold rises ₹487; silver gains ₹426</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/6xebvh/article65725071.ece/alternates/LANDSCAPE_100/2022-08-02T233346Z_916703305_RC2OOV9NLXIR_RTRMADP_3_TWITTER-M-A-SUBPOENAS.JPG" alt="">
+                        </div>
+                        <div> Elon Musk’s response to Twitter lawsuit to be made public by Friday</div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://th-i.thgim.com/public/incoming/nswv0r/article65725012.ece/alternates/LANDSCAPE_100/2022-08-01T093042Z_475040910_RC2ZQS9IMU0X_RTRMADP_3_USA-CHINA-CHIPS.JPG" alt="">
+                        </div>
+                        <div> Chip makers have a message for car makers: Your turn to pay</div>
+                    </div>
+                </div>
+            </div>
+            <!-- business Right -->
+            <div class="explained-right">
+                <div>
+                    <div>Services sector growth slipped to four-month low in July: S&P Global PMI</div>
+                    <div><i class="fa-solid fa-share-nodes"></i></div>
+                </div>
+                <div> <p> Business sentiment worsens with just 5% firms expecting growth a year from now</p></div>
+                <div> <p>THE HINDU BUREAU</p> </div>
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/449xao/article65720109.ece/alternates/LANDSCAPE_300/thvli%20S%26P%20India%20Services%20Sector%20PMI%20Service%20Economy.jfif" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+
+</html>
+<script>
+    function latestDate() {
+        var toDay;
+        var days = ["Sunaday", "Monday", "Tuesdays", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var today = new Date();
+        var day = days[today.getDay()];
+        var month = months[today.getMonth()];
+        toDay = day + ", " + month + " " + today.getDate() + ", " + today.getFullYear();
+        return toDay;
+    }
+    document.getElementById("todaysdate").innerText = latestDate();
+</script>
