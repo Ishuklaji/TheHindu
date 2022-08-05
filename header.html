@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hindu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header{
+            flex-wrap: wrap;
+        }
+        section{
+            justify-content: space-around;
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #first{
+            width: 50%;
+            margin: auto;
+            display: flex;
+        }
+        #first .sub-container{
+            width: 50%;
+            float: left;
+            display: flex;
+            border-right: 1px solid grey;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: -16px;
+        }
+        #search-box{
+            width: 80%;
+            margin: auto;
+            border-left: 1px solid grey;
+            justify-content: right;
+            margin-left: 600px;
+            display: flex;
+            margin-bottom: -10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        input{
+            border:none;
+            padding: 5px;
+            font-size: 15px;
+        }
+        i{
+            width:40px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 12px;
+            margin-top: -4px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 5px;
+            color: black;
+        }
+         hr{
+            width: 80%;
+            background-color: grey;
+        }
+        form{
+            margin:auto;
+            display: flex;
+        }
+        button{
+            margin-left: 10px;
+            background-color: white;
+            border: none;
+            font-size: larger;
+        }
+        #logo{
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            font-size: 11px;
+            position: relative;
+            line-height: 13px;
+            font-family: "Fira Sans",sans-serif;
+            margin: auto;
+        }
+        span{
+            width: 100%;
+            margin: auto;
+            padding:0px 10px;
+        }
+        #latest-news {
+            font-weight: 600;
+            color:rgb(0, 97, 139);
+        }
+        #todaysdate {
+            font-weight: 600;
+            color: grey;
+        }
+        #nav{
+            width: 80%;
+            margin: auto;
+            display: block;
+            text-transform: uppercase;
+            justify-content: space-between;
+            margin-top: 14px;
+        }
+        .menuicon{
+            width: 38px;
+            float: left;
+        }
+        #navbar #menuicon{
+            font-size: 10px;
+            text-decoration: none;
+        } 
+        #menu{
+            float: left;
+        margin-top: 18px;
+        font-size: 12px;
+        color: #5a5a5a;
+        letter-spacing: 1.2px;
+        line-height: 13px;
+        padding-bottom: 5px;
+        }
+        li{
+            display: inline-block;
+            margin-left: 13px;
+            font-weight: 600;
+        }
+        .active:hover{
+            text-decoration: underline;
+        }
+        #unordered-list{
+            margin: auto;
+            margin-left : -20px;
+        }
+        #button{
+            margin: auto;
+            margin-left: -20px;
+            float: right;
+            justify-content: space-around;
+        }
+        #button > #buttons{
+            font-weight:lighter;
+            font-size: 5px;
+        }
+        #trial{
+            border : 1px solid rgb(50, 50, 247);
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: rgb(50, 50, 247);
+            color: white;
+            justify-content: space-between;
+            margin-top: -5px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #trial:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #subscribe{
+            padding: 10px 15px;
+            color: black;
+            background-color:#ffc000;
+            justify-content: space-between;
+            margin-top: -5px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #subscribe:hover{
+            background-color: rgb(50, 50, 247);
+            color: white;
+            cursor: pointer;
+        }
+        #login{
+            border : 1px solid rgb(50, 50, 247);
+            padding: 10px 15px;
+            text-decoration: none;
+            color: rgb(50, 50, 247);
+            justify-content: space-between;
+            margin-top: -5px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #login:hover{
+            background-color: rgb(50, 50, 247);
+            color: white;
+            cursor: pointer;
+        }
+        #button a {
+        color: white;
+        text-decoration: none;
+        }
+        .sub-container #epaper1 {
+            color: black;
+            text-decoration: none;
+        }
+        #todayspaper a{
+            color:rgb(0, 97, 139);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        #nav2{
+            width: 80%;
+            margin: auto;
+            margin-top: -2px;
+        }
+        #nav2 span{
+            color: red;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        #nav2 ul{
+            display: inline-block;
+            text-transform: uppercase;
+            margin-top: -5px;
+            font-size: 14px;
+            font-weight: 300;
+            color: rgb(167, 157, 157);
+        }
+        #housing img{
+            display: inline-block;
+            position: relative;
+            width:110px;
+        }
+        .navbar2:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .dropbtn{
+            background-color: white;
+            /* color:slategray; */
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            /* text-align: center; */
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            z-index: 1;
+            text-transform: uppercase;
+        }
+
+        .dropdown-menu a{
+            color:#5a5a5a;
+            padding: 15px 13px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover{
+            color:midnightblue;
+        }
+
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropbtn{
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            color:#5a5a5a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div id="container">
+            <div id="first">
+                <div class="sub-container"><a href="https://www.facebook.com/thehindu" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                </div>
+
+                <div class="sub-container"><a href="https://twitter.com/The_Hindu" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                </div>
+
+                <div class="sub-container"><a href="https://www.linkedin.com/school/the-hindu/" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                </div>
+
+                <div class="sub-container"><a href="https://www.instagram.com/the_hindu/?ref=badge" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                </div>
+
+                <div class="sub-container"><a href="https://t.me/THnewsupdates" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                </div>
+
+                <div class="sub-container"><a href="https://www.thehindu.com/newsletter-subscription/" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                </div>
+
+                <div class="sub-container"><a href="https://www.thehindu.com/social/" target="_blank" title="Connect to Facebook" rel="noopener">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </a>
+                </div>
+
+                <div class="sub-container" ><a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage" target="_blank" title="Connect to Facebook" id="epaper1" rel="noopener">
+                    <p>ePaper</p>
+                </a>
+                </div>
+            </div>
+            <div id="search-box">
+                <form action="">
+                <input type="text" placeholder="Search here">
+                <button type="submit" title="a"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            </div>
+        </div>
+        <hr>
+        </section>
+        <section class="logo-block">
+            <div id="logo" class="logo">
+                <a href="www.thehindu.com" target="_blank" title="the_hindu" rel="noopener">
+                    <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="The Hindu">
+                </a>
+                <p>
+                    <span id="latest-news">LATEST NEWS </span>  
+                    <span id="todaysdate"></span>         
+                    <span id="todayspaper">
+                        <a href="https://epaper.thehindu.com/?utm_source=Hindu&utm_medium=Menu&utm_campaign=Header" rel="noopener"> E-PAPER</a>
+                    </span>
+                </p>
+            </div>
+        </section>
+        <nav id="nav">
+            <div id="navbar">
+                <div class="menuicon"><a href=""><p id="menuicon">menu</p><i class="fa-solid fa-bars" id="icon"></i></a></div>
+            </div>
+            <div id="menu">
+                <ul id="unordered-list">
+                    <li class="active">Today's Paper</li>
+                    <li class="dropdown"><button class="dropbtn"> News</button>
+                    <div class="dropdown-menu">
+                        <a href="#">India</a>
+                        <a href="#">World</a>
+                        <a href="#">Cities</a>
+                        <a href="#">States</a>
+                    </div></li>
+                    <li class="dropdown"><button class="dropbtn">Opinion</button> 
+                    <div class="dropdown-menu">
+                        <a href="#">Cartoons</a>
+                        <a href="#">Columns</a>
+                        <a href="#">Editorial</a>
+                        <a href="#">Interview</a>
+                        <a href="#">Lead</a>
+                        <a href="#">Readers Editor</a>
+                        <a href="#">Comment</a>
+                        <a href="#">Open Page</a>
+                        <a href="#">Letters</a>
+                    </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn"> business</button>
+                    <div class="dropdown-menu">
+                        <a href="#">Agri-Business</a>
+                        <a href="#">Industry</a>
+                        <a href="#">Economy</a>
+                        <a href="#">Markets</a>
+                        <a href="#">Budget 2022</a>
+                        <a href="#">Stock Quotes</a>
+                    </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn">sport</button>
+                    <div class="dropdown-menu">
+                        <a href="#">Cricket</a>
+                        <a href="#">FootBall</a>
+                        <a href="#">Hockey</a>
+                        <a href="#">Tennis</a>
+                        <a href="#">Atheletics</a>
+                        <a href="#">MotorSport</a>
+                        <a href="#">Races</a>
+                        <a href="#">Other Sports</a>
+                    </div>
+                    </li>
+                    <li class="dropdown"><button class="dropbtn">entertainment</button>
+                    <div class="dropdown-menu">
+                        <a href="#">Art</a>
+                        <a href="#">Dance</a>
+                        <a href="#">Movies</a>
+                        <a href="#">Music</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">Theater</a>
+                    </div>
+                    </li>
+                    <li class="active">crossword+</li>
+                    <li class="active">science</li>
+                </ul>
+            </div>
+            <div id="button">
+                <ul id="buttons">
+                    <li id="trial" ><a href="https://www.thehindu.com/subscription/trial/?utm_source=TheHindu&utm_medium=homepage&utm_campaign=FTbutton">Get Trial</li>
+                    <li id="subscribe"><a href="https://www.thehindu.com/subscription/" id="subscribeit">Subscribe now</a></li>
+                    <li id="login">log in</li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <nav id="nav2">
+            <span>Trending Today</span>
+            <ul >
+                <li class="navbar2">Chennai Chess Olympiad</li>
+                <li class="navbar2">Parliament Proceedings</li>
+                <li class="navbar2">Monkeypox</li>
+                <li class="navbar2">Coronavirus</li>
+                <li id="housing"><a href="https://www.thehindu.com/housing-real-estate-india/"><img src="https://www.thehindu.com/theme/images/th-online/housing.png" alt="housing"></a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+<script>
+    function latestDate(){
+        var toDay;
+        var days = ["Sunaday","Monday", "Tuesdays", "Wednesday","Thursday","Friday","Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var today = new Date();
+        var day = days[today.getDay()];
+        var month = months[today.getMonth()];
+        toDay = day +", " + month + " " + today.getDate() + ", " + today.getFullYear();
+        return toDay;  
+    }
+    document.getElementById("todaysdate").innerText = latestDate();
+</script>
