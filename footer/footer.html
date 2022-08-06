@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #footer{
+            width: 80%;
+            margin: auto;
+        }
+
+        #container{
+            background-color: #f5f5f5;
+        }
+
+        .social-list{
+            display: inline-block;
+            border-right: 2px solid #cbcbcb;
+        }
+
+        .social-list2{
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+        .social-list3{
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .social-list2 a{
+            text-decoration: none; 
+            color:#9d9d9d;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+
+        .social-list3 a{
+            text-decoration: none; 
+            color: #9d9d9d;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+        .social-list2 a:hover{
+            color:rgb(0, 0, 87);
+        }
+
+        .social-list3 a:hover{
+            text-decoration: underline;
+        }
+
+        .social-list a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #top-container{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #cbcbcb;
+        }
+
+        li{
+            justify-content: space-between;
+            text-align: center;
+            padding: 5px 12px;
+        }
+
+        #social-list{
+            margin-bottom: 0px;
+        }
+
+        #TheLogo{
+            height: 24px;
+            width: 250px;
+            margin-top: 18px;
+        }
+
+        #logo{
+            text-align: center;
+            margin-left: -130px;
+            width: 600px;
+            margin-bottom: 0px;
+        }
+
+        #form{
+            margin-top: 10px;
+            border-left: 2px solid #cbcbcb;
+            height: 36px;
+            padding-left: 25px;
+        }
+        #form2 > input{
+            border: none;
+            font-size: 16px;
+            margin-left: -15px;
+            padding-bottom: 0px;
+            background-color: #f5f5f5;;
+        }
+        #form2 > input:focus-within{
+            border: none;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        #btnSearch{
+            background-color: #f5f5f5;;
+            border: none;
+            margin-top: 8px;
+        }
+
+        #mid-container{
+            display: flex;
+            background-color: white;
+        }
+        
+        #mid-container > div{
+            margin: 10px;
+            margin-top: 40px;
+            width: 32%;
+        }
+
+        .add-clip{
+            width: 90%;
+            white-space:nowrap;
+            overflow: hidden;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            margin-left: -20px;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+
+        .add-clip a{
+            text-decoration: none;
+            color: rgb(81, 79, 79);
+            font-size: 14px;
+            font-weight: 500;
+            
+        }
+
+        .add-clip a:hover{
+            text-decoration: underline;
+            color: rgb(81, 79, 79);
+        }
+
+        span{
+            padding-left: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(0, 20, 81);
+        }
+
+        #clips{
+            margin-top: 2px;
+        }
+        
+        #mid-container a{
+            color:#9d9d9d;
+        }
+        #mid-container #business{
+            color:deepskyblue;
+            font-weight: 400;
+            font-size: 14px;
+            margin-left: -40px;
+        }
+
+        #clips{
+            border-right: 1px dotted black;
+            height : 140px;
+        }
+
+        #clips2{
+            border-right: 1px dotted black;
+            height : 70px;
+            margin-top: 2px;
+        }
+
+        #clips3{
+            margin-top: 2px;
+        }
+
+        #footberg{
+            font-size: 11.5px;
+            height: 170px;
+        }
+
+        #navbar1{
+            font-size: 11.5px;
+            text-align: center;
+        }
+
+        .footerupto{
+            display: flex;
+        }
+
+        .spanfooter{
+            display:inline-block;
+            margin-top: 12px;
+            margin-left: 80px;
+            font-weight: 200;
+            font-size: 11.5px;
+        }
+
+        #spanfooter2{
+            display:inline-block;
+            margin-top: 12px;
+            margin-left: 20px;
+            font-weight: 200;
+            font-size: 11.5px;
+        }
+
+        .footer-list{
+            margin-left: -37px;
+        }
+        .footer-list2{
+            margin-left: -37px;
+            padding-right: 10px;
+        }
+
+        .footer-sub-list{
+            display: inline;
+            border-right: 1px solid #9d9d9d;
+        }
+
+        .footer-sub-list a{
+            text-decoration: none;
+            color:#9d9d9d;
+        }
+
+        .footer-sub-list a:hover{
+            text-decoration: underline;
+            /* color:#9d9d9d; */
+        }
+
+        #footer-from-last{
+            width: 30%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <footer id="footer"> 
+        <div id="container">
+            <section>
+                <div id="top-container">
+                <div id="social">
+                    <ul id="social-list">
+                        <li class="social-list"> <a href="https://www.facebook.com/thehindu"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="social-list"> <a href="https://twitter.com/The_Hindu"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="social-list"> <a href="https://www.linkedin.com/school/the-hindu/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="social-list"> <a href="https://www.instagram.com/the_hindu/?ref=badge"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="social-list"> <a href="https://t.me/THnewsupdates"><i class="fa-brands fa-telegram"></i></a></li>
+                        <li class="social-list"> <a href="https://www.thehindu.com/newsletter-subscription/"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li class="social-list"> <a href="https://www.thehindu.com/social/"><i class="fa-light fa-mobile"></i></a></li>
+                        <li class="social-list"> <a href="https://epaper.thehindu.com/?utm_source=thehindu&utm_medium=header&utm_campaign=landingpage">ePaper</a></li>
+                    </ul>
+                </div>
+                <div id="logo"><a href=""><img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="The Hindu Logo" id="TheLogo"></a></div>
+                <div id="form">
+                    <form action="" id="form2">
+                        <input type="text" placeholder="Search here" title="Search here">
+                        <button type="submit" title="a" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div id="mid-container">
+                <div>
+                    <span>TRENDING TODAY</span>
+                    <ul id="clips">
+                        <li class="add-clip" style="list-style-type:none"> <a href="https://www.thehindu.com/news/national/govt-assessing-impact-of-zawahiris-killing-on-al-qaedas-presence-in-india/article65717531.ece"> Central officials assesing the impact of Zawahiri's killing on al-Qaeda's presence in India.</a></li>
+
+                        <li class="add-clip" style="list-style-type:none"> <a href="https://www.thehindu.com/news/international/us-house-speaker-pelosi-arrives-in-taiwan-defying-beijing/article65717821.ece">U.S House Speaker Nancy Pelosi lands in Taiwan, China warns of countermeasures</a></li>
+
+                        <li class="add-clip" style="list-style-type:none"> <a href="https://www.thehindu.com/opinion/editorial/death-of-a-face-on-the-elimination-of-al-qaeda-leader-ayman-al-zawahiri/article65716764.ece">Death of a face: on the elimination of al-Qaeda leader Ayman al-Zawahiri</a></li>
+
+                        <li class="add-clip" style="list-style-type:none"> <a href="https://www.thehindu.com/news/national/supreme-court-issues-notice-to-govt-on-ed-directors-tenure-extension/article65715318.ece">Supreme Court issues notice to govt on ED Director's tenure extension</a></li>
+
+                        <li class="add-clip" style="list-style-type:none"> <a href="https://www.thehindu.com/news/national/vaishnaw-dismisses-rajas-5g-scam-charge/article65720252.ece">Vaishnaw dismisses Raja’s 5G scam charge</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span>TRENDING TOPIC </span>
+                    <ul id="clips2">
+                        <li class="add-clip" style="list-style-type: none"><a href="https://www.thehindu.com/tag/644-600/">Terrorism (Crime)</a></li>
+                        <li class="add-clip" style="list-style-type: none"><a href="https://www.thehindu.com/tag/1413-1349/">National Politics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span>TRENDING ON OUR GROUP SITES</span>
+                    <ul id="clips3">
+                        <span id="business">BUSINESSLINE</span>
+                        <li class="add-clip" style="list-style-type:none"><a href="https://www.thehindubusinessline.com/economy/policy/windfall-gain-tax-raised/article65718458.ece">Economy,Busines...</a></li>
+
+                        <li class="add-clip" style="list-style-type: none"><a href="https://www.thehindubusinessline.com/economy/policy/e-invoicing-to-be-mandatory-for-businesses-with-turnover-exceeding-10-cr-from-oct-1/article65713335.ece">GST</a></li>
+
+                        <li class="add-clip" style="list-style-type: none"><a href="https://www.thehindubusinessline.com/news/world/why-us-house-speaker-nancy-pelosi-went-to-taiwan-and-why-chinas-angry/article65719839.ece">USA</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="footberg">
+                <nav id="navbar1">
+                    <div id="main-menu">
+                        <ul id="main-menu-list">
+                            <li class="social-list3"><a href=""> Home</a></li>
+                            <li class="social-list2"><a href=""> News</a></li>
+                            <li class="social-list2"><a href=""> Coronavirus</a></li>
+                            <li class="social-list2"><a href=""> Opinion</a></li>
+                            <li class="social-list2"><a href=""> Business</a></li>
+                            <li class="social-list2"><a href=""> Sport</a></li>
+                            <li class="social-list3"><a href=""> Crossword+</a></li>
+                            <li class="social-list3"><a href=""> Coupones</a></li>
+                            <li class="social-list3"><a href=""> Entertainment</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav>
+                    <div class="footerupto">
+                        <span class="spanfooter">THE SITE</span>
+                        <ul class="footer-list">
+                            <li class="footer-sub-list"><a href="">About Us</a></li>
+                            <li class="footer-sub-list"><a href="">Terms of Use</a></li>
+                            <li class="footer-sub-list"><a href="">Privacy Policy</a></li>
+                            <li class="footer-sub-list"><a href="">Contacts</a></li>
+                            <li class="footer-sub-list"><a href="">Archive</a></li>
+                            <li class="footer-sub-list"><a href="">Print Subscription</a></li>
+                            <li class="footer-sub-list"><a href="">ePapaer</a></li>
+                            <li class="footer-sub-list"><a href="">Digital Subscription</a></li>
+                            <li class="footer-sub-list"><a href="">Rss Feeds</a></li>
+                            <li class="footer-sub-list"><a href="">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerupto">
+                        <span id="spanfooter2">GROUP SITES</span>
+                        <ul class="footer-list2">
+                            <li class="footer-sub-list"><a href="">The Hindu</a></li>
+                            <li class="footer-sub-list"><a href="">தலையங்கம்</a></li>
+                            <li class="footer-sub-list"><a href="">Business Line</a></li>
+                            <li class="footer-sub-list"><a href="">BL on Campus</a></li>
+                            <li class="footer-sub-list"><a href="">Sportstar</a></li>
+                            <li class="footer-sub-list"><a href="">Frontline</a></li>
+                            <li class="footer-sub-list"><a href="">The Hindu Center</a></li>
+                            <li class="footer-sub-list"><a href="">RoofandFloor</a></li>
+                            <li class="footer-sub-list"><a href="">STEP</a></li>
+                            <li class="footer-sub-list"><a href="">Young World Club</a></li>
+                        </ul>
+                    </div>
+                    <div id="footer-from-last">
+                        <ul class="footer-list">
+                            <li class="footer-sub-list"><a href="">Publications</a></li>
+                            <li class="footer-sub-list"><a href="">eBooks</a></li>
+                            <li class="footer-sub-list"><a href="">Images</a></li>
+                            <li class="footer-sub-list"><a href="">Classifields</a></li>
+                        </ul>
+                        <p>CONTACT US Copyright<sup>@</sup> 2022,THG PUBLISHING PVT LTD.</p>
+                    </div>
+                </nav>
+            </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
