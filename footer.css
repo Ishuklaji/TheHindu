@@ -6,7 +6,7 @@
         #headingbox{
             border-bottom: 1px solid #828282;
             text-align: center;
-            height: 45px;
+            height: 40px;
             display: flex;
             align-items: center ;
             
@@ -24,6 +24,7 @@
         }
 
         #thehinduimage img{
+            margin-top:5px;
             height:40px;
             width:100%;
             box-sizing: border-box;
