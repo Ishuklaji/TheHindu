@@ -1,0 +1,190 @@
+
+        #page{
+            background-color: #eaeaea;
+            width:100%;
+        }
+        #headingbox{
+            border-bottom: 1px solid #828282;
+            text-align: center;
+            height: 45px;
+            display: flex;
+            align-items: center ;
+            
+        }
+
+        
+        #logocontainer{
+            height:40px;
+            display: flex;
+            width:35%;
+        }
+
+        #thehinduimage{
+            width:35%;
+        }
+
+        #thehinduimage img{
+            height:40px;
+            width:100%;
+            box-sizing: border-box;
+        }
+
+        #searchbarbox{
+            width:30%;
+            display: flex;
+        }
+
+        #searchbarbox input{
+            height:25px;
+            width:100%;
+            box-sizing: border-box;
+            border:0px;
+            background-color: #eaeaea;
+            border-right: 1px rgb(137, 130, 130);
+        }
+
+        #searchbarbox input:focus{
+            outline: none;
+        }
+
+        #epaper{
+            width:40px;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid rgb(137, 130, 130);
+        }
+
+        #epaper a{
+            font-size: 11px;
+            margin: auto;
+            text-decoration: none;
+            color:#5a5a5a;
+        }
+
+        #epaper a:hover{
+            text-decoration: underline;
+        }
+
+
+        .logobox span a svg{
+            object-fit: contain;
+            height:14px;
+            width:14px;
+            margin-top: 13px;
+            margin-bottom: 13px;
+            padding-left: 13px;
+            padding-right: 13px;
+            fill:#5a5a5a;
+        }
+        
+        .logobox{
+            align-items: center;
+            border-right: 1px solid #828282;
+        }
+        
+
+        #whitebox{
+            background-color: white;
+            display:flex;
+        }
+
+        #trendingtodaylist{
+            list-style-type: none;
+            width:80%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        #trendingtodaybox{
+            
+            width:40%;
+            border-right:1px dotted black;
+        }
+
+        .listitem{
+            text-overflow: ellipsis; 
+            overflow:hidden; 
+            white-space: nowrap;
+            margin-top:5px;
+            margin-bottom:5px;
+            color:#a39797
+        }
+
+        .listitem > a{
+            text-decoration: none;
+            color: #a39797;
+        }
+
+        .listitem > a:hover{
+            text-decoration: underline;
+        }
+
+        #trendingtopicbox{
+            width:30%;
+            border-right:1px dotted black;
+        }
+
+        #trendingtopiclist{
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        #trendingonourgroupsitesbox{
+            width:30%;
+        }
+
+        #trendingonourgroupsiteslist{
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        #bottomcapitallist{
+            display:flex;
+            list-style-type: none;
+            padding-bottom:20px;
+            padding-top:20px;
+        }
+
+
+        .underlinedtagsofcapital{
+            text-decoration: none;
+            margin-right: 20px;
+            color:rgb(137, 130, 130);
+            font-weight: 600;
+        }
+
+        .underlinedtagsofcapital:hover{
+            text-decoration: underline;
+            
+        }
+
+        .hoveredtagsofcapital{
+            text-decoration: none;
+            margin-right: 20px;
+            color:rgb(137, 130, 130);
+            font-weight: 600;
+        }
+
+        .hoveredtagsofcapital:hover{
+            color:rgb(78, 75, 75);
+        }
+
+        #firstoffivebarslist{
+            list-style-type: none;
+            display:flex;
+            justify-content: center;
+        }
+
+        .firstoffivebarslistitems{
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color: #828282;
+            border-right: 1px solid #a9a6a6;
+        }
+
+        .firstoffivebarslistitems:hover{
+            text-decoration: underline;
+        }
+
+    
