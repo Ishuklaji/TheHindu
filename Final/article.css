@@ -1,0 +1,71 @@
+body{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+h2 {
+    color: #133B5A;
+}
+a {
+    color: black;
+    margin-left: 380px;
+    font-size: 18px;
+    text-decoration:none;
+}
+p {
+    font-size: 18px;
+    color: black;
+    line-height: 26px;
+    text-align: justify;
+    font-family: "TundraWeb", sans-serif;
+}
+.logo {
+    margin-left: 250px;
+    width: 400px;
+}
+span{
+    color: #133B5A;
+    font-weight: 600;
+}
+
+ /* Media queries should be at bottom only */
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+    div {
+        width: 460px;
+    }
+
+    .im1 {
+        width: 460px;
+    }
+
+    .logo {
+        margin-left: 150px;
+        width: 150px;
+    }
+
+    a {
+        margin-left: 155px;
+    }
+}
+
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 450px) {
+    div {
+        width: 120px;
+    }
+
+    .im1 {
+        width: 120px;
+    }
+
+    .logo {
+        margin-left: 60px;
+        width: 60px;
+    }
+
+    a {
+        margin-left: 70px;
+    }
+}
