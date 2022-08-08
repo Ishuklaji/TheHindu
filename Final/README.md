@@ -50,8 +50,34 @@ We hope to use some better tools and frameworks in near future in order to impro
 - It contains of The Hindu logo along with a search bar.
 - It contains trending articles lists in it.
 
+
 ## Screenshots
 
+![Header Screenshot](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Header).png?raw=true)
+
+![Main Page 1](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%201).png?raw=true)
+
+![Main Page 2](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%202).png?raw=true)
+
+![Main Page 3](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%203%20).png?raw=true)
+
+![Main Page 4](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%204).png?raw=true)
+
+![Main Page 5](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%205).png?raw=true)
+
+![Main Page 6](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%206).png?raw=true)
+
+![Main Page 7](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%207).png?raw=true)
+
+![Main Page 8](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Main%20Page%208).png?raw=true)
+
+![Footer](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Footer).png?raw=true)
+
+![Subscribtion page](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Subscribtion%20Page).png?raw=true)
+
+![Signup Page](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Sign%20Up%20Page).png?raw=true)
+
+![Login Page](https://github.com/Ishuklaji/Project007/blob/master/Final/Screenshot%20(Login%20Page).png?raw=true)
 
 ## Credits
 ### Our team consisted of 5 members 
